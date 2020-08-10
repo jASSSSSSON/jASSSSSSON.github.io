@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Idea on jASSSSSSON&#39;s Blog</title>
-    <link>https://jasssssson.github.io/tags/idea/</link>
+    <link>https://github.com/jASSSSSSON/jASSSSSSON.github.io/tags/idea/</link>
     <description>Recent content in Idea on jASSSSSSON&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
     <lastBuildDate>Mon, 10 Aug 2020 13:51:30 +0800</lastBuildDate>
     
-	<atom:link href="https://jasssssson.github.io/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://github.com/jASSSSSSON/jASSSSSSON.github.io/tags/idea/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>简单配置Springboot（Idea）</title>
-      <link>https://jasssssson.github.io/springboot/</link>
+      <link>https://github.com/jASSSSSSON/jASSSSSSON.github.io/springboot/</link>
       <pubDate>Mon, 10 Aug 2020 13:51:30 +0800</pubDate>
       
-      <guid>https://jasssssson.github.io/springboot/</guid>
+      <guid>https://github.com/jASSSSSSON/jASSSSSSON.github.io/springboot/</guid>
       <description></description>
     </item>
     
