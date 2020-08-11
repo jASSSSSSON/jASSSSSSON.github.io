@@ -57,8 +57,9 @@ Hugo(版本很多，windows的在下方)   安装配置  Git
  环境介绍 操作系统：Windows10
 Git: 2.28.0 x64
 静态博客生成工具：Hugo-0.74.3
- 博客搭建  解决方案   Error: Network Error  首先，提示词已经非常清晰了，所以请检查配置文件config,toml内的[baseURL]设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示[Error: Network Error],所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用CTRL+F5强制刷新，避免缓存影响测试。
-注意 : 如果是用GItpage的博客地址，[https://XXX.github.io]后什么都不要加，还有属性要用&amp;quot;&amp;quot;包裹，我改的时候有一次就把前面的&amp;quot;给删掉了。:(
+ 博客搭建  详见我的另一篇文章搭建GithubPage博客(Hugo)
+ 解决方案   Error: Network Error  首先，提示词已经非常清晰了，所以请检查配置文件config,toml内的[baseURL]设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示[Error: Network Error],所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用CTRL+F5强制刷新，避免缓存影响测试。
+注意 : 如果是用GitPage的博客地址，[https://XXX.github.io]后什么都不要加，还有属性要用&amp;quot;&amp;quot;包裹，我改的时候有一次就把前面的&amp;quot;给删掉了。:(
   Error: Not Found  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件config.toml内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;[你的仓库名称]&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)
 我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了[Error: Network Error]，但很快就解决了，接下来这个[Error: Not Found]可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：[repo]=&amp;quot;填写自己的仓库&amp;quot;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)
 但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址https://jasssssson.github.io。

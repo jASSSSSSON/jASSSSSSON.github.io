@@ -18,22 +18,22 @@
         <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
         
         <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/ -&lt;h2 id=&#34;背景信息span-idbackgrounddescriptionspan&#34;&gt;背景信息&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/ -&lt;h2 id=&#34;背景信息&#34;&gt;背景信息&lt;/h2&gt;
 &lt;p&gt;  使用Hugo初始化静态页面，&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题模板，这款主题带有Gitalk功能模块，统一在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转&lt;br&gt;
-&lt;a href=&#34;#backgrounddescription&#34;&gt;背景信息&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#environmentintroduction&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#blogbuild&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#detail&#34;&gt;细节&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#code&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#epilogue&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;#%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF&#34;&gt;背景信息&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%BB%86%E8%8A%82&#34;&gt;细节&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E4%BB%A3%E7%A0%81&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%BB%93%E8%AF%AD&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;环境介绍span-idenvironmentintroductionspan&#34;&gt;环境介绍&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;环境介绍&#34;&gt;环境介绍&lt;/h2&gt;
 &lt;p&gt;操作系统：Windows10&lt;br&gt;
 Git: 2.28.0 x64&lt;br&gt;
 静态博客生成工具：Hugo-0.74.3&lt;br&gt;
 主题：Diary-1.2.0&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;博客搭建span-idblogbuildspan&#34;&gt;博客搭建&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;博客搭建&#34;&gt;博客搭建&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;h3 id=&#34;注册&#34;&gt;注册&lt;/h3&gt;
@@ -103,14 +103,14 @@ Git: 2.28.0 x64&lt;br&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;细节span-iddetailspan&#34;&gt;细节&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;细节&#34;&gt;细节&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;h3 id=&#34;gitalkspan-idenespan&#34;&gt;&lt;code&gt;Gitalk&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
-  这次我还配置了&lt;code&gt;Gitalk&lt;/code&gt;,遇到的问题详见&lt;a href=&#34;https://jasssssson.github.io/githubblog/&#34;&gt;搭建博客中遇到的问题(Gitalk)&lt;/a&gt;。值得一提的就是根据不同的主题，如果想要开启评论，需要在&lt;code&gt;config.toml&lt;/code&gt;中设置组件启用，在文章的元数据内开启评论。&lt;/li&gt;
+  这次我还配置了&lt;code&gt;Gitalk&lt;/code&gt;,遇到的问题详见&lt;a href=&#34;https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog&#34;&gt;搭建博客中遇到的问题(Gitalk)&lt;/a&gt;。值得一提的就是根据不同的主题，如果想要开启评论，需要在&lt;code&gt;config.toml&lt;/code&gt;中设置组件启用，在文章的元数据内开启评论。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;代码span-idcodespan&#34;&gt;代码&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -183,7 +183,7 @@ categories: 配置
 #开启评论
 comment : ture
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&#34;结语span-idepiloguespan&#34;&gt;结语&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
 &lt;p&gt;  感谢阅读我的博客，希望能给你带来帮助。&lt;code&gt;:)&lt;/code&gt; &lt;a href=&#34;https://github.com/jASSSSSSON&#34;&gt;@jASSSSSSON&lt;/a&gt;&lt;/p&gt;
 - https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/ - jASSSSSSON</description>
         </item>
@@ -196,29 +196,30 @@ comment : ture
         <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
         
         <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/ -&lt;h2 id=&#34;问题描述span-idproblemdescriptionspan&#34;&gt;问题描述&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/ -&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;  在使用Hugo初始化静态页面时，使用了&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题，这款主题带有Gitalk功能模块，需要在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误 &lt;a href=&#34;#ene&#34;&gt;&lt;code&gt;[Error: Network Error]&lt;/code&gt;&lt;/a&gt; (问题解决方案可点击跳到相应部分)，后来又出现 &lt;a href=&#34;#enf&#34;&gt;&lt;code&gt;[Error: Not Found]&lt;/code&gt;&lt;/a&gt; 是本次问题关注点，如需跳转，请点击下方快速跳转&lt;br&gt;
-&lt;a href=&#34;#problemdescription&#34;&gt;问题描述&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#environmentintroduction&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#blogbuild&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#solution&#34;&gt;解决方案&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#code&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;#epilogue&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0&#34;&gt;问题描述&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88&#34;&gt;解决方案&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E4%BB%A3%E7%A0%81&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%BB%93%E8%AF%AD&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;环境介绍span-idenvironmentintroductionspan&#34;&gt;环境介绍&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;环境介绍&#34;&gt;环境介绍&lt;/h2&gt;
 &lt;p&gt;操作系统：Windows10&lt;br&gt;
 Git: 2.28.0 x64&lt;br&gt;
 静态博客生成工具：Hugo-0.74.3&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;博客搭建span-idblogbuildspan&#34;&gt;博客搭建&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;博客搭建&#34;&gt;博客搭建&lt;/h2&gt;
+&lt;p&gt;  详见我的另一篇文章&lt;a href=&#34;https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/&#34;&gt;搭建GithubPage博客(Hugo)&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;解决方案span-idsolutionspan&#34;&gt;解决方案&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;解决方案&#34;&gt;解决方案&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;h3 id=&#34;error-network-errorspan-idenespan&#34;&gt;&lt;code&gt;Error: Network Error&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
 &lt;p&gt;  首先，提示词已经非常清晰了，所以请检查配置文件&lt;code&gt;config,toml&lt;/code&gt;内的&lt;code&gt;[baseURL]&lt;/code&gt;设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示&lt;code&gt;[Error: Network Error]&lt;/code&gt;,所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用&lt;code&gt;CTRL+F5&lt;/code&gt;强制刷新，避免缓存影响测试。&lt;br&gt;
 &lt;img src=&#34;https://www.962v.com/images/2020/08/11/baseURL1.png&#34; alt=&#34;baseURL&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;注意&lt;/code&gt; : 如果是用GItpage的博客地址，&lt;code&gt;[https://XXX.github.io]&lt;/code&gt;后什么都不要加，还有&lt;code&gt;属性&lt;/code&gt;要用&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;包裹，我改的时候有一次就把前面的&lt;code&gt;&amp;quot;&lt;/code&gt;给删掉了。&lt;code&gt;:(&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;注意&lt;/code&gt; : 如果是用GitPage的博客地址，&lt;code&gt;[https://XXX.github.io]&lt;/code&gt;后什么都不要加，还有&lt;code&gt;属性&lt;/code&gt;要用&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;包裹，我改的时候有一次就把前面的&lt;code&gt;&amp;quot;&lt;/code&gt;给删掉了。&lt;code&gt;:(&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;h3 id=&#34;error-not-foundspan-idenfspan&#34;&gt;&lt;code&gt;Error: Not Found&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
@@ -231,7 +232,7 @@ Git: 2.28.0 x64&lt;br&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;代码span-idcodespan&#34;&gt;代码&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -304,7 +305,7 @@ categories: 配置
 #开启评论
 comment : ture
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&#34;结语span-idepiloguespan&#34;&gt;结语&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
 &lt;p&gt;  感谢阅读我的博客，希望能给你带来帮助。&lt;code&gt;:)&lt;/code&gt; &lt;a href=&#34;https://github.com/jASSSSSSON&#34;&gt;@jASSSSSSON&lt;/a&gt;&lt;/p&gt;
 - https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/ - jASSSSSSON</description>
         </item>
