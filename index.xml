@@ -6,153 +6,509 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Mon, 10 Aug 2020 13:51:30 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 18:07:00 +0800</lastBuildDate>
     
         <atom:link href="https://jasssssson.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
+        <title>搭建GithubPage博客(Hugo)</title>
+        <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</link>
+        <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
+        
+        <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/ -&lt;h2 id=&#34;背景信息span-idbackgrounddescriptionspan&#34;&gt;背景信息&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;  使用Hugo初始化静态页面，&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题模板，这款主题带有Gitalk功能模块，统一在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转&lt;br&gt;
+&lt;a href=&#34;#backgrounddescription&#34;&gt;背景信息&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#environmentintroduction&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#blogbuild&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#detail&#34;&gt;细节&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#code&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#epilogue&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;环境介绍span-idenvironmentintroductionspan&#34;&gt;环境介绍&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;操作系统：Windows10&lt;br&gt;
+Git: 2.28.0 x64&lt;br&gt;
+静态博客生成工具：Hugo-0.74.3&lt;br&gt;
+主题：Diary-1.2.0&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;博客搭建span-idblogbuildspan&#34;&gt;博客搭建&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;注册&#34;&gt;注册&lt;/h3&gt;
+&lt;p&gt;  首先，既然是利用GithubPage，所以需要一个Github账户，如果没有，请先注册一个，点击下方传送门可以直接跳转，已经注册过就可以跳过这步了。&lt;br&gt;
+需要注意的是，第一次打开页面，这就是注册，按要求输入信息即可，&lt;code&gt;Username&lt;/code&gt;不可重复，后续是URL中的标识，重名了就改一个吧！&lt;code&gt;:)&lt;/code&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/&#34;&gt;Github.com&lt;/a&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/github_com.png&#34; alt=&#34;Github.com&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;下载&#34;&gt;下载&lt;/h3&gt;
+&lt;p&gt;  账号准备就绪了后，就需要下载Git客户端以及Hugo了，附上传送门。&lt;br&gt;
+&lt;code&gt;注意&lt;/code&gt; : 选择自己的版本和对应&lt;code&gt;x86&lt;/code&gt;/&lt;code&gt;x64&lt;/code&gt;版本(&lt;code&gt;x86&lt;/code&gt;是32位/bit，&lt;code&gt;x64&lt;/code&gt;是64位/bit)，不要下载其他操作系统的文件！&lt;br&gt;
+&lt;a href=&#34;https://git-scm.com/download/&#34;&gt;Git&lt;/a&gt; 
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/gitDown.png&#34; alt=&#34;GitDown&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;Git(win)&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/gitWin.png&#34; alt=&#34;GitWin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo&lt;/a&gt;(版本很多，windows的在下方) 
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/hugoRelease.png&#34; alt=&#34;hugoRelease&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;安装配置&#34;&gt;安装配置&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Git&lt;br&gt;
+  全部都下载好后，进行安装与配置，这里转载一下其他博主的文章，大家看看，只需要配置&lt;code&gt;Git&lt;/code&gt;能够使用即可。
+转载：&lt;a href=&#34;https://blog.csdn.net/huangqqdy/article/details/83032408&#34;&gt;Git下载、安装与环境配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hugo
+&lt;ul&gt;
+&lt;li&gt;将下载的文件解压，得到&lt;code&gt;hugo.exe&lt;/code&gt;文件，然后如上一篇博文一样，将文件放到自己想要的位置后，添加环境变量&lt;code&gt;path&lt;/code&gt;为文件所在目录即可(如D://software)。&lt;br&gt;
+验证Hugo是否安装成功：&lt;code&gt;[hugo version]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;接下来新建一个文件夹，用来装静态网页，使用&lt;code&gt;[hugo new site 自定义站点名称]&lt;/code&gt;，需要在文件夹内使用&lt;code&gt;CMD&lt;/code&gt;命令，可以在文件夹地址栏输入&lt;code&gt;[cmd]&lt;/code&gt;打开&lt;code&gt;CMD&lt;/code&gt;再使用新建命令。&lt;/li&gt;
+&lt;li&gt;新建完成后，应该会产生如下图所示结构
+&lt;pre&gt;&lt;code&gt;├─archetypes
+├─content
+├─data
+├─layouts
+├─static
+├─themes
+└─config.toml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个时候就需要挑选一款自己喜欢的主题了，传送门 ： &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo主题&lt;/a&gt;&lt;br&gt;
+挑选主题多注意主题作者的文档，里面记录了如何配置主题参数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;将主题下载到本地后，移动到站点下的&lt;code&gt;themes&lt;/code&gt;文件夹，并将里面的&lt;code&gt;config.toml&lt;/code&gt;移动出来覆盖外面的配置文件，接下来，在站点文件夹下使用&lt;code&gt;CMD&lt;/code&gt;命令&lt;code&gt;hugo server&lt;/code&gt;开启本地测试，调试参数，直到满意，访问地址为&lt;a href=&#34;http://localhost:1313&#34;&gt;&lt;code&gt;http://localhost:1313&lt;/code&gt;&lt;/a&gt;(注意主题文档，有一部分需要配置&lt;code&gt;config.toml&lt;/code&gt;文件才能正常使用)&lt;/li&gt;
+&lt;li&gt;如果测试无误，进入下一个环节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;部署准备&#34;&gt;部署准备&lt;/h3&gt;
+&lt;p&gt;  进入&lt;code&gt;Github&lt;/code&gt;主页，新建一个仓库，仓库名为：&lt;code&gt;[你的用户名].github.io&lt;/code&gt;(以下简称&lt;code&gt;Page仓库&lt;/code&gt;)，使用自动初始化，然后打开你的本地&lt;code&gt;Git&lt;/code&gt;仓库，使用命令将&lt;code&gt;Page仓库&lt;/code&gt; &lt;code&gt;[clone]&lt;/code&gt;下来。&lt;br&gt;
+如需配置&lt;code&gt;Gitalk&lt;/code&gt;请看：进入用户设置，左边最后一栏&lt;code&gt;Developer settings&lt;/code&gt; - &lt;code&gt;oAuth Apps&lt;/code&gt;,右侧点击&lt;code&gt;New oAuth&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/oAuthegister.png&#34; alt=&#34;oAuth&#34;&gt;&lt;/p&gt;
+&lt;p&gt;记录下&lt;code&gt;[Client ID]&lt;/code&gt;和&lt;code&gt;[Client Secret]&lt;/code&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/jota.png&#34; alt=&#34;AppInfo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;回到你的&lt;code&gt;静态网页站点&lt;/code&gt;，将&lt;code&gt;config.toml&lt;/code&gt;中的&lt;code&gt;[baseURL]&lt;/code&gt;地址改为&lt;code&gt;[https://Page仓库名]&lt;/code&gt;，按照文档进行额外修改，最后使用&lt;code&gt;[hugo]&lt;/code&gt;命令生成根目录下&lt;code&gt;public文件夹&lt;/code&gt;，准备完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;部署&#34;&gt;部署&lt;/h3&gt;
+&lt;p&gt;将本地的&lt;code&gt;Page仓库&lt;/code&gt;内的文件复制到&lt;code&gt;public文件夹&lt;/code&gt;内，在内部使用&lt;code&gt;Git&lt;/code&gt;命令将文件夹上传，顺序如下 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[git add -A]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[git commit -m &amp;quot;上传说明&amp;quot;]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[git push - u origin master]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;也许会要求输入账号密码，按照要求输入即可(密码看不见，保护隐私)。&lt;br&gt;
+上传完成后，访问&lt;code&gt;[baseURL]&lt;/code&gt;地址，你的博客准备好了，以后每次都使用&lt;code&gt;[hugo]&lt;/code&gt;修改&lt;code&gt;public文件夹&lt;/code&gt;,再上传即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;细节span-iddetailspan&#34;&gt;细节&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;gitalkspan-idenespan&#34;&gt;&lt;code&gt;Gitalk&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+  这次我还配置了&lt;code&gt;Gitalk&lt;/code&gt;,遇到的问题详见&lt;a href=&#34;https://jasssssson.github.io/githubblog/&#34;&gt;搭建博客中遇到的问题(Gitalk)&lt;/a&gt;。值得一提的就是根据不同的主题，如果想要开启评论，需要在&lt;code&gt;config.toml&lt;/code&gt;中设置组件启用，在文章的元数据内开启评论。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;代码span-idcodespan&#34;&gt;代码&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseURL&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://xxx.github.io&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;DefaultContentLanguage&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;zh&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;languageCode&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en-us&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;xxx&amp;#39;s Blog&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;copyright&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;xxx&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;diary&amp;#34;&lt;/span&gt;
+
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;markup&lt;/span&gt;]
+  [&lt;span style=&#34;color:#a6e22e&#34;&gt;markup&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;highlight&lt;/span&gt;]
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;codeFences&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;guessSyntax&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;hl_Lines&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;lineNoStart&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;lineNos&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;lineNumbersInTable&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;noClasses&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;monokai&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;tabWidth&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a subtitle&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;enableGitalk&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 开启Gitalk&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;favicon&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/images/icon.ico&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Twitter Card and Open Graph settings&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;enableOpenGraph&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;enableTwitterCards&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My Blog&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# will set &amp;#39;og:site_name&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My HomePage Description&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# will set &amp;#39;og:description&amp;#39;&lt;/span&gt;
+
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;gitalk&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;你的GitName&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;repo&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;你的仓库名称&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 如Gitalk&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;client_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 填入记录的Client ID&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;client_secret&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 填入记录的Client Secret&lt;/span&gt;
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;taxonomies&lt;/span&gt;]
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;tag&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;category&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt;
+
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/categories&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 侧边栏映射&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 侧边栏名称(我的繁体字是输入就是繁体不是上面的DefaultContentLanguage)&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 优先级，越小越靠上&lt;/span&gt;
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/tags&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/posts&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;posts&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/index.xml&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RSS Feed&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;.md&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-properties&#34; data-lang=&#34;properties&#34;&gt;title: &amp;quot;文章大标题&amp;quot;
+date: 2020-08-11T14:15:30+08:00
+description: &amp;quot;副标题&amp;quot;
+#标签，会自动出现在Tags菜单内，但不会自动删除，需要使用Hugo重新生成public时才会去除
+tags: [配置, github,blog]  
+featured_image: &amp;quot;图片地址&amp;quot;
+#分类
+categories: 配置
+#开启评论
+comment : ture
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;结语span-idepiloguespan&#34;&gt;结语&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;  感谢阅读我的博客，希望能给你带来帮助。&lt;code&gt;:)&lt;/code&gt; &lt;a href=&#34;https://github.com/jASSSSSSON&#34;&gt;@jASSSSSSON&lt;/a&gt;&lt;/p&gt;
+- https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/ - jASSSSSSON</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>搭建博客中遇到的问题(Gitalk）</title>
+        <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</link>
+        <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
+        
+        <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/ -&lt;h2 id=&#34;问题描述span-idproblemdescriptionspan&#34;&gt;问题描述&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;  在使用Hugo初始化静态页面时，使用了&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题，这款主题带有Gitalk功能模块，需要在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误 &lt;a href=&#34;#ene&#34;&gt;&lt;code&gt;[Error: Network Error]&lt;/code&gt;&lt;/a&gt; (问题解决方案可点击跳到相应部分)，后来又出现 &lt;a href=&#34;#enf&#34;&gt;&lt;code&gt;[Error: Not Found]&lt;/code&gt;&lt;/a&gt; 是本次问题关注点，如需跳转，请点击下方快速跳转&lt;br&gt;
+&lt;a href=&#34;#problemdescription&#34;&gt;问题描述&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#environmentintroduction&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#blogbuild&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#solution&#34;&gt;解决方案&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#code&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#epilogue&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;环境介绍span-idenvironmentintroductionspan&#34;&gt;环境介绍&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;操作系统：Windows10&lt;br&gt;
+Git: 2.28.0 x64&lt;br&gt;
+静态博客生成工具：Hugo-0.74.3&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;博客搭建span-idblogbuildspan&#34;&gt;博客搭建&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;解决方案span-idsolutionspan&#34;&gt;解决方案&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;error-network-errorspan-idenespan&#34;&gt;&lt;code&gt;Error: Network Error&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+&lt;p&gt;  首先，提示词已经非常清晰了，所以请检查配置文件&lt;code&gt;config,toml&lt;/code&gt;内的&lt;code&gt;[baseURL]&lt;/code&gt;设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示&lt;code&gt;[Error: Network Error]&lt;/code&gt;,所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用&lt;code&gt;CTRL+F5&lt;/code&gt;强制刷新，避免缓存影响测试。&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/baseURL1.png&#34; alt=&#34;baseURL&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;注意&lt;/code&gt; : 如果是用GItpage的博客地址，&lt;code&gt;[https://XXX.github.io]&lt;/code&gt;后什么都不要加，还有&lt;code&gt;属性&lt;/code&gt;要用&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;包裹，我改的时候有一次就把前面的&lt;code&gt;&amp;quot;&lt;/code&gt;给删掉了。&lt;code&gt;:(&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;error-not-foundspan-idenfspan&#34;&gt;&lt;code&gt;Error: Not Found&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+&lt;p&gt;  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件&lt;code&gt;config.toml&lt;/code&gt;内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;&lt;code&gt;[你的仓库名称]&lt;/code&gt;&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/GitalkParams.png&#34; alt=&#34;GitalkParams&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了&lt;code&gt;[Error: Network Error]&lt;/code&gt;，但很快就解决了，接下来这个&lt;code&gt;[Error: Not Found]&lt;/code&gt;可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：&lt;code&gt;[repo]=&amp;quot;填写自己的仓库&amp;quot;&lt;/code&gt;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/11/gitalk.png&#34; alt=&#34;GitalkRrepositories&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址&lt;a href=&#34;https://jasssssson.github.io&#34;&gt;https://jasssssson.github.io&lt;/a&gt;。&lt;br&gt;
+一开始加上了&lt;code&gt;[.git]&lt;/code&gt;尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是&lt;code&gt;[Error: Network Error]&lt;/code&gt;，后面改好后测试有些时候切换了浏览器，一会又是&lt;code&gt;[Error: Not Found]&lt;/code&gt;，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉&lt;code&gt;[.git]&lt;/code&gt;的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。&lt;code&gt;:)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;代码span-idcodespan&#34;&gt;代码&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseURL&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://xxx.github.io&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;DefaultContentLanguage&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;zh&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;languageCode&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en-us&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;xxx&amp;#39;s Blog&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;copyright&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;xxx&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;diary&amp;#34;&lt;/span&gt;
+
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;markup&lt;/span&gt;]
+  [&lt;span style=&#34;color:#a6e22e&#34;&gt;markup&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;highlight&lt;/span&gt;]
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;codeFences&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;guessSyntax&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;hl_Lines&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;lineNoStart&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;lineNos&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;lineNumbersInTable&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;noClasses&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;monokai&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;tabWidth&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a subtitle&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;enableGitalk&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 开启Gitalk&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;favicon&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/images/icon.ico&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Twitter Card and Open Graph settings&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;enableOpenGraph&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;enableTwitterCards&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My Blog&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# will set &amp;#39;og:site_name&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My HomePage Description&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# will set &amp;#39;og:description&amp;#39;&lt;/span&gt;
+
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;gitalk&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;你的GitName&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;repo&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;你的仓库名称&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 如Gitalk&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;client_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 详情请见搭建GithubPage博客(Hugo)&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;client_secret&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 详情请见搭建GithubPage博客(Hugo)&lt;/span&gt;
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;taxonomies&lt;/span&gt;]
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;tag&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;category&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt;
+
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/categories&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 侧边栏映射&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 侧边栏名称(我的繁体字是输入就是繁体不是上面的DefaultContentLanguage)&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 优先级，越小越靠上&lt;/span&gt;
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/tags&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/posts&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;posts&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/index.xml&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RSS Feed&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;.md&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-properties&#34; data-lang=&#34;properties&#34;&gt;title: &amp;quot;文章大标题&amp;quot;
+date: 2020-08-11T14:15:30+08:00
+description: &amp;quot;副标题&amp;quot;
+#标签，会自动出现在Tags菜单内，但不会自动删除，需要使用Hugo重新生成public时才会去除
+tags: [配置, github,blog]  
+featured_image: &amp;quot;图片地址&amp;quot;
+#分类
+categories: 配置
+#开启评论
+comment : ture
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;结语span-idepiloguespan&#34;&gt;结语&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;  感谢阅读我的博客，希望能给你带来帮助。&lt;code&gt;:)&lt;/code&gt; &lt;a href=&#34;https://github.com/jASSSSSSON&#34;&gt;@jASSSSSSON&lt;/a&gt;&lt;/p&gt;
+- https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/ - jASSSSSSON</description>
+        </item>
+    
+    
+    
+        <item>
         <title>简单配置Springboot（Idea）</title>
-        <link>https://jasssssson.github.io/springboot/</link>
+        <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</link>
         <pubDate>Mon, 10 Aug 2020 13:51:30 +0800</pubDate>
         
-        <guid>https://jasssssson.github.io/springboot/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/springboot/ -- https://jasssssson.github.io/springboot/ - jASSSSSSON</description>
+        <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/ -- https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/ - jASSSSSSON</description>
         </item>
     
     
     
         <item>
-        <title>中文文本测试</title>
-        <link>https://jasssssson.github.io/posts/chinese/</link>
+        <title>三字经</title>
+        <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</link>
         <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
         
-        <guid>https://jasssssson.github.io/posts/chinese/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/chinese/ -&lt;p&gt;　　这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。 这样看来， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 一般来讲，我们都必须务必慎重的考虑考虑。 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 我们不得不面对一个非常尴尬的事实，那就是， 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。&lt;/p&gt;
-&lt;p&gt;　　我认为， 而这些并不是完全重要，更加重要的问题是， 了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。 中午吃什么因何而发生？ 而这些并不是完全重要，更加重要的问题是， 卢梭在不经意间这样说过，浪费时间是一桩大罪过。这启发了我， 既然如此， 从这个角度来看， 歌德在不经意间这样说过，意志坚强的人能把世界放在手中像泥块一样任意揉捏。我希望诸位也能好好地体会这句话。 我认为， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 莎士比亚在不经意间这样说过，人的一生是短的，但如果卑劣地过这一生，就太长了。带着这句话，我们还要更加慎重的审视这个问题： 带着这些问题，我们来审视一下中午吃什么。 中午吃什么因何而发生？ 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 布尔沃曾经说过，要掌握书，莫被书掌握；要为生而读，莫为读而生。这似乎解答了我的疑惑。 而这些并不是完全重要，更加重要的问题是， 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 带着这些问题，我们来审视一下中午吃什么。 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 我认为， 一般来说， 中午吃什么，到底应该如何实现。 我们不得不面对一个非常尴尬的事实，那就是， 所谓中午吃什么，关键是中午吃什么需要如何写。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 现在，解决中午吃什么的问题，是非常非常重要的。&lt;/p&gt;
-&lt;p&gt;　　我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 带着这些问题，我们来审视一下中午吃什么。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我认为， 问题的关键究竟为何？ 非洲曾经提到过，最灵繁的人也看不见自己的背脊。这启发了我， 易卜生说过一句富有哲理的话，伟大的事业，需要决心，能力，组织和责任感。这似乎解答了我的疑惑。 一般来说， 在这种困难的抉择下，本人思来想去，寝食难安。 中午吃什么，到底应该如何实现。 经过上述讨论， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 中午吃什么因何而发生？ 
-带着这些问题，我们来审视一下中午吃什么。 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。&lt;/p&gt;
-- https://jasssssson.github.io/posts/chinese/ - jASSSSSSON</description>
+        <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/ -&lt;p&gt;人之初，性本善。性相近，习相远。
+苟不教，性乃迁。教之道，贵以专。
+昔孟母，择邻处。子不学，断机杼。
+窦燕山，有义方。教五子，名俱扬。
+养不教，父之过。教不严，师之惰。
+子不学，非所宜。幼不学，老何为。
+玉不琢，不成器。人不学，不知义。
+为人子，方少时。亲师友，习礼仪。
+香九龄，能温席。孝于亲，所当执。
+融四岁，能让梨。弟于长，宜先知。
+首孝悌，次见闻。知某数，识某文。
+一而十，十而百。百而千，千而万。
+三才者，天地人。三光者，日月星。
+三纲者，君臣义。父子亲，夫妇顺。
+曰春夏，曰秋冬。此四时，运不穷。
+曰南北，曰西东。此四方，应乎中。
+曰水火，木金土。此五行，本乎数。
+十干者，甲至癸。十二支，子至亥。
+曰黄道，日所躔。曰赤道，当中权。
+赤道下，温暖极。我中华，在东北。
+曰江河，曰淮济。此四渎，水之纪。
+曰岱华，嵩恒衡。此五岳，山之名。
+曰士农，曰工商。此四民，国之良。
+曰仁义，礼智信。此五常，不容紊。
+地所生，有草木。此植物，遍水陆。
+有虫鱼，有鸟兽。此动物，能飞走。
+稻粱菽，麦黍稷。此六谷，人所食。
+马牛羊，鸡犬豕。此六畜，人所饲。
+曰喜怒，曰哀惧。爱恶欲，七情具。
+青赤黄，及黑白。此五色，目所识。
+酸苦甘，及辛咸。此五味，口所含。
+膻焦香，及腥朽。此五臭，鼻所嗅。
+匏土革，木石金。丝与竹，乃八音。
+曰平上，曰去入。此四声，宜调协。
+高曾祖，父而身。身而子，子而孙。
+自子孙，至玄曾。乃九族，人之伦。
+父子恩，夫妇从。兄则友，弟则恭。
+长幼序，友与朋。君则敬，臣则忠。
+此十义，人所同。当师叙，勿违背。
+斩齐衰，大小功。至缌麻，五服终。
+礼乐射，御书数。古六艺，今不具。
+惟书学，人共遵。既识字，讲说文。
+有古文，大小篆。隶草继，不可乱。
+若广学，惧其繁。但略说，能知原。
+凡训蒙，须讲究。详训诂，明句读。
+为学者，必有初。小学终，至四书。
+论语者，二十篇。群弟子，记善言。
+孟子者，七篇止。讲道德，说仁义。
+作中庸，子思笔。中不偏，庸不易。
+作大学，乃曾子。自修齐，至平治。
+孝经通，四书熟。如六经，始可读。
+诗书易，礼春秋。号六经，当讲求。
+有连山，有归藏。有周易，三易详。
+有典谟，有训诰。有誓命，书之奥。
+我周公，作周礼。著六官，存治体。
+大小戴，注礼记。述圣言，礼乐备。
+曰国风，曰雅颂。号四诗，当讽咏。
+诗既亡，春秋作。寓褒贬，别善恶。
+三传者，有公羊。有左氏，有谷梁。
+经既明，方读子。撮其要，记其事。
+五子者，有荀扬。文中子，及老庄。
+经子通，读诸史。考世系，知终始。
+自羲农，至黄帝。号三皇，居上世。
+唐有虞，号二帝。相揖逊，称盛世。
+夏有禹，商有汤。周文王，称三王。
+夏传子，家天下。四百载，迁夏社。
+汤伐夏，国号商。六百载，至纣亡。
+周文王，始诛纣。八百载，最长久。
+周辙东，王纲坠。逞干戈，尚游说。
+始春秋，终战国。五霸强，七雄出。
+嬴秦氏，始兼并。传二世，楚汉争。
+高祖兴，汉业建。至孝平，王莽篡。
+光武兴，为东汉。四百年，终于献。
+魏蜀吴，争汉鼎。号三国，迄两晋。
+宋齐继，梁陈承。为南朝，都金陵。
+北元魏，分东西。宇文周，与高齐。
+迨至隋，一土宇。不再传，失统绪。
+唐高祖，起义师。除隋乱，创国基。
+二十传，三百载。梁灭之，国乃改。
+梁唐晋，及汉周。称五代，皆有由。
+炎宋兴，受周禅。十八传，南北混。
+辽与金，皆称帝。元灭金，绝宋世。
+舆图广，超前代。九十年，国祚废。
+太祖兴，国大明。号洪武，都金陵。
+迨成祖，迁燕京。十六世，至崇祯。
+权阉肆，寇如林。李闯出，神器焚。
+清世祖，膺景命。靖四方，克大定。
+由康雍，历乾嘉。民安富，治绩夸。
+道咸间，变乱起。始英法，扰都鄙。
+同光后，宣统弱。传九帝，满清殁。
+革命兴，废帝制。立宪法，建民国。
+古今史，全在兹。载治乱，知兴衰。
+史虽繁，读有次。史记一，汉书二。
+后汉三，国志四。兼证经，参通鉴。
+读史者，考实录。通古今，若亲目。
+昔仲尼，师项橐。古圣贤，尚勤学。
+赵中令，读鲁论。彼既仕，学且勤。
+披蒲编，削竹简。彼无书，且知勉。
+头悬梁，锥刺股。彼不教，自勤苦。
+如囊萤，如映雪。家虽贫，学不辍。
+如负薪，如挂角。身虽劳，犹苦卓。
+苏老泉，二十七。始发愤，读书籍。
+彼既老，犹悔迟。尔小生，宜早思。
+若梁灏，八十二。对大廷，魁多士。
+彼既成，众称异。尔小生，宜立志。
+莹八岁，能咏诗。泌七岁，能赋棋。
+彼颖悟，人称奇。尔幼学，当效之。
+蔡文姬，能辨琴。谢道韫，能咏吟。
+彼女子，且聪敏。尔男子，当自警。
+唐刘晏，方七岁。举神童，作正字。
+口而诵，心而惟。朝于斯，夕于斯。
+晏虽幼，身已仕。有为者，亦若是。
+犬守夜，鸡司晨。苟不学，曷为人。
+蚕吐丝，蜂酿蜜。人不学，不如物。
+幼而学，壮而行。上致君，下泽民。
+扬名声，显父母。光于前，裕于后。
+人遗子，金满赢。我教子，唯一经。
+勤有功，戏无益。戒之哉，宜勉力。&lt;/p&gt;
+- https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/ - jASSSSSSON</description>
         </item>
     
     
     
         <item>
-        <title>Typography - Test for features</title>
-        <link>https://jasssssson.github.io/posts/post-5/</link>
-        <pubDate>Sun, 18 Mar 2018 12:13:38 +0530</pubDate>
+        <title>奇怪的问题</title>
+        <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
+        <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
         
-        <guid>https://jasssssson.github.io/posts/post-5/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/post-5/ -&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
-&lt;h2 id=&#34;typography&#34;&gt;Typography&lt;/h2&gt;
-&lt;p&gt;Lid est laborum et dolorum fuga, This is &lt;a href=&#34;http://example.com/&#34; title=&#34;Title&#34;&gt;an example&lt;/a&gt; inline link. Et harum quidem rerum facilis, &lt;strong&gt;This is bold&lt;/strong&gt; and &lt;em&gt;emphasis&lt;/em&gt; cumque nihilse impedit quo minus id quod amets untra dolor amet sad. While this is &lt;code&gt;code block()&lt;/code&gt; and following is a &lt;code&gt;pre&lt;/code&gt; tag&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;print &#39;this is pre tag&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Following is the syntax highlighted code block&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;getCookie&lt;/span&gt;(name &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;string&lt;/span&gt;, r &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;interface&lt;/span&gt;{}) (*http.Cookie, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;error&lt;/span&gt;) {
-	rd := r.(*http.Request)
-	cookie, err := rd.&lt;span style=&#34;color:#008b45&#34;&gt;Cookie&lt;/span&gt;(name)
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; err != &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;nil&lt;/span&gt; {
-		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;nil&lt;/span&gt;, err
-	}
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; cookie, &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;nil&lt;/span&gt;
-}
-
-&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;setCookie&lt;/span&gt;(cookie *http.Cookie, w &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;interface&lt;/span&gt;{}) &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;error&lt;/span&gt; {
-	&lt;span style=&#34;color:#228b22&#34;&gt;// Get write interface registered using `Acquire` method in handlers.
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	wr := w.(http.ResponseWriter)
-	http.&lt;span style=&#34;color:#008b45&#34;&gt;SetCookie&lt;/span&gt;(wr, cookie)
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;nil&lt;/span&gt;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is blockquote, Will make it &lt;em&gt;better now&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;lsquo;I want to do with you what spring does with the cherry trees.&amp;rsquo; &lt;!-- raw HTML omitted --&gt;cited ~Pablo Neruda&lt;!-- raw HTML omitted --&gt;*&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Et harum quidem &lt;em&gt;rerum facilis&lt;/em&gt; est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Unordered list&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ordered list&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ol&gt;
-- https://jasssssson.github.io/posts/post-5/ - jASSSSSSON</description>
+        <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ -&lt;h2 id=&#34;假如你穿越回到了过去抛开电影里的设定你确实遇到了自己那么怎样才能鉴别谁是过去的自己谁是现在的自己呢&#34;&gt;假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？&lt;/h2&gt;
+&lt;p&gt;忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;假如造出了预知未来的机器人们靠着这台机器可以避免所有灾害那么一旦采取措施未来就会立刻改变如果出现两台机器他们的预测结果会不会出现差异&#34;&gt;假如造出了预知未来的机器，人们靠着这台机器可以避免所有灾害。那么，一旦采取措施，未来就会立刻改变。如果出现两台机器，他们的预测结果会不会出现差异？&lt;/h2&gt;
+&lt;p&gt;(比如，假定未来是以图像形式展示的，我使用其中一台设备观察一段时间后的另一台，然后做出改变未来的动作)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;如果祖父悖论不存在是否可以证明时间也不存在&#34;&gt;如果祖父悖论不存在，是否可以证明时间也不存在？&lt;/h2&gt;
+&lt;p&gt;(如果杀死祖父的那一刻，&amp;lsquo;我&amp;rsquo;会直接消失)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;如果进行了时间穿越旅行那会不会只是推动了全体时间&#34;&gt;如果进行了时间穿越旅行，那会不会只是推动了全体时间&lt;/h2&gt;
+&lt;p&gt;(比如你会因为向前旅行三年而减少三岁)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;假设宇宙是有边界的那它的边缘到底会是什么性质呢&#34;&gt;假设宇宙是有边界的，那它的边缘到底会是什么性质呢？&lt;/h2&gt;
+&lt;p&gt;(会不会从这里出去，从中心对称的另一边出来)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&amp;hellip;&lt;/h2&gt;
+- https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ - jASSSSSSON</description>
         </item>
     
     
     
         <item>
-        <title>(No comment) When You Have Too Much to Do</title>
-        <link>https://jasssssson.github.io/posts/post-1/</link>
-        <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+        <title>藏句阁</title>
+        <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</link>
+        <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
         
-        <guid>https://jasssssson.github.io/posts/post-1/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/post-1/ -&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;
-&lt;p&gt;It all keeps piling up, and it can feel overwhelming.&lt;/p&gt;
-&lt;p&gt;How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?&lt;/p&gt;
-&lt;p&gt;In this primer, I’ll look at some key strategies and tactics for taking on an overloaded life with an open heart, lots of energy, and a smile on your face.&lt;/p&gt;
-&lt;h2 id=&#34;the-first-step-triage&#34;&gt;The First Step: Triage&lt;/h2&gt;
-&lt;p&gt;Whether you’re just starting your day, or you’re in the middle of the chaos and just need to find some sanity … the first step is to get into triage mode.&lt;/p&gt;
-&lt;p&gt;Triage, as you probably know, is sorting through the chaos to prioritize: what needs to be done now, what needs to be done today, what needs to be done this week, and what can wait? You’re looking at urgency, but also what’s meaningful and important.&lt;/p&gt;
-&lt;p&gt;Here’s what you might do:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pick out the things that need to be done today. Start a Short List for things you’re going to do today. That might be important tasks for big projects, urgent tasks that could result in damage if you don’t act, smaller admin tasks that you really should take care of today, and responding to important messages. I would recommend being ruthless and cutting out as much as you can, having just 5 things on your plate if that’s at all possible. Not everything needs to be done today, and not every email needs to be responded to.&lt;/li&gt;
-&lt;li&gt;Push some things to tomorrow and the rest of the week. If you have deadlines that can be pushed back (or renegotiated), do that. Spread the work out over the week, even into next week. What needs to be done tomorrow? What can wait a day or two longer?&lt;/li&gt;
-&lt;li&gt;Eliminate what you can. That might mean just not replying to some messages that aren’t that important and don’t really require a reply. It might mean telling some people that you can’t take on this project after all, or that you need to get out of the commitment that you said you’d do. Yes, this is uncomfortable. For now, just put them on a list called, “To Not Do,” and plan to figure out how to get out of them later.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;OK, you have some breathing room and a manageable list now! Let’s shrink that down even further and just pick one thing.&lt;/p&gt;
-&lt;h2 id=&#34;next-focus-on-one-thing&#34;&gt;Next: Focus on One Thing&lt;/h2&gt;
-&lt;p&gt;With a lot on your plate, it’s hard to pick one thing to focus on. But that’s exactly what I’m going to ask you to do.&lt;/p&gt;
-&lt;p&gt;Pick one thing, and give it your focus. Yes, there are a lot of other things you can focus on. Yes, they’re stressing you out and making it hard to focus. But think about it this way: if you allow it all to be in your head all the time, that will always be your mode of being. You’ll always be thinking about everything, stressing out about it all, with a frazzled mind … unless you start shifting.&lt;/p&gt;
-&lt;p&gt;The shift:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pick something to focus on. Look at the triaged list from the first section … if you have 5-6 things on this Short List, you can assess whether there’s any super urgent, time-sensitive things you need to take care of. If there are, pick one of them. If not, pick the most important one — probably the one you have been putting off doing.&lt;/li&gt;
-&lt;li&gt;Clear everything else away. Just for a little bit. Close all browser tabs, turn off notifications, close open applications, put your phone away.&lt;/li&gt;
-&lt;li&gt;Put that one task before you, and allow yourself to be with it completely. Pour yourself into it. Think of it as a practice, of letting go (of everything else), of focus, of radical simplicity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When you’re done (or after 15-20 minutes have gone by at least), you can switch to something else. But don’t allow yourself to switch until then.&lt;/p&gt;
-&lt;p&gt;By closing off all exits, by choosing one thing, by giving yourself completely to that thing … you’re now in a different mode that isn’t so stressful or spread thin. You’ve started a shift that will lead to focus and sanity.&lt;/p&gt;
-&lt;h2 id=&#34;third-schedule-time-to-simplify&#34;&gt;Third: Schedule Time to Simplify&lt;/h2&gt;
-&lt;p&gt;Remember the To Not Do list above? Schedule some time this week to start reducing your projects, saying no to people, getting out of commitments, crossing stuff off your task list … so that you can have some sanity back.&lt;/p&gt;
-&lt;p&gt;There are lots of little things that you’ve said “yes” to that you probably shouldn’t have. That’s why you’re overloaded. Protect your more important work, and your time off, and your peace of mind, by saying “no” to things that aren’t as important.&lt;/p&gt;
-&lt;p&gt;Schedule the time to simplify — you don’t have to do it today, but sometime soon — and you can then not have to worry about the things on your To Not Do list until then.&lt;/p&gt;
-&lt;h2 id=&#34;fourth-practice-mindful-focus&#34;&gt;Fourth: Practice Mindful Focus&lt;/h2&gt;
-&lt;p&gt;Go through the rest of the day with an attitude of “mindful focus.” That means that you are doing one thing at a time, being as present as you can, switching as little as you can.&lt;/p&gt;
-&lt;p&gt;Think of it as a settling of the mind. A new mode of being. A mindfulness practice (which means you won’t be perfect at it).&lt;/p&gt;
-&lt;p&gt;As you practice mindful focus, you’ll learn to practice doing things with an open heart, with curiosity and gratitude, and even joy. Try these one at a time as you get to do each task on your Short List.&lt;/p&gt;
-&lt;p&gt;You’ll find that you’re not so overloaded, but that each task is just perfect for that moment. And that’s a completely new relationship with the work that you do, and a new relationship with life.&lt;/p&gt;
-- https://jasssssson.github.io/posts/post-1/ - jASSSSSSON</description>
+        <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/ -&lt;h2 id=&#34;三更灯火五更鸡正是男儿读书时黑发不知勤学早白首方悔读书迟&#34;&gt;三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。&lt;/h2&gt;
+&lt;p&gt;—— 颜真卿&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;发现者尤其是一个初出茅庐的年轻发现者需要勇气才能无视他人的冷漠和怀疑才能坚信自己发现的意义并把研究继续下去&#34;&gt;发现者，尤其是一个初出茅庐的年轻发现者，需要勇气才能无视他人的冷漠和怀疑，才能坚信自己发现的意义，并把研究继续下去。&lt;/h2&gt;
+&lt;p&gt;—— 贝弗里奇&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;沉浸于现实的忙碌之中没有时间和精力思念过去成功也就不会太远了&#34;&gt;沉浸于现实的忙碌之中，没有时间和精力思念过去，成功也就不会太远了。&lt;/h2&gt;
+&lt;p&gt;—— 雷音&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;学习知识要善于思考思考再思我就是靠这个方法成为科学家的&#34;&gt;学习知识要善于思考，思考，再思。我就是靠这个方法成为科学家的。&lt;/h2&gt;
+&lt;p&gt;—— 爱因斯坦&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
+- https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/ - jASSSSSSON</description>
         </item>
     
     
     
         <item>
         <title>Chapter VI: Esmeralda</title>
-        <link>https://jasssssson.github.io/posts/chapter-6/</link>
+        <link>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-6/</link>
         <pubDate>Fri, 14 Apr 2017 11:25:05 -0400</pubDate>
         
-        <guid>https://jasssssson.github.io/posts/chapter-6/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/chapter-6/ -&lt;p&gt;We are delighted to be able to inform the reader, that during the whole of
+        <guid>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-6/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-6/ -&lt;p&gt;We are delighted to be able to inform the reader, that during the whole of
 this scene, Gringoire and his piece had stood firm. His actors, spurred on
 by him, had not ceased to spout his comedy, and he had not ceased to
 listen to it. He had made up his mind about the tumult, and was determined
@@ -221,18 +577,18 @@ an apothecary! It is true that Homerus begged through the Greek towns, and
 that Naso died in exile among the Muscovites. But may the devil flay me if
 I understand what they mean with their Esmeralda! What is that word, in
 the first place?—‘tis Egyptian!”&lt;/p&gt;
-- https://jasssssson.github.io/posts/chapter-6/ - jASSSSSSON</description>
+- https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-6/ - jASSSSSSON</description>
         </item>
     
     
     
         <item>
         <title>Chapter I: The Grand Hall</title>
-        <link>https://jasssssson.github.io/posts/chapter-1/</link>
+        <link>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/</link>
         <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
         
-        <guid>https://jasssssson.github.io/posts/chapter-1/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
+        <guid>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
 to-day, the Parisians awoke to the sound of all the bells in the triple
 circuit of the city, the university, and the town ringing a full peal.&lt;/p&gt;
 &lt;p&gt;The sixth of January, 1482, is not, however, a day of which history has
@@ -298,7 +654,7 @@ buffet of an archer, or the horse of one of the provost’s sergeants, which
 kicked to restore order; an admirable tradition which the provostship has
 bequeathed to the constablery, the constablery to the _maréchaussée_,
 the _maréchaussée_ to our _gendarmeri_ of Paris.&lt;/p&gt;
-- https://jasssssson.github.io/posts/chapter-1/ - jASSSSSSON</description>
+- https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/ - jASSSSSSON</description>
         </item>
     
     

@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html><head>
+<title>搭建GithubPage博客(Hugo)</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="使用Diary主题模板生成">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="搭建GithubPage博客(Hugo)" />
+<meta property="og:description" content="使用Diary主题模板生成" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/" />
+<meta property="article:published_time" content="2020-08-11T18:07:00+08:00" />
+<meta property="article:modified_time" content="2020-08-11T18:07:00+08:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="搭建GithubPage博客(Hugo)"/>
+<meta name="twitter:description" content="使用Diary主题模板生成"/>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+<link rel="icon" href="/images/icon.ico">
+
+
+
+
+<link rel="stylesheet" href="https://jasssssson.github.io/scss/journal.min.47aa1ffb60880ad8c72feecd6962a14331eca7a7a30e08354a1ca91009b8bc5b.css" integrity="sha256-R6of&#43;2CICtjHL&#43;7NaWKhQzHsp6ejDgg1ShypEAm4vFs=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://jasssssson.github.io/scss/dark-mode.min.832f90e2bc07191c85a3b6c0310607f539897546b1126dd04df64aff22316ecd.css" integrity="sha256-gy&#43;Q4rwHGRyFo7bAMQYH9TmJdUaxEm3QTfZK/yIxbs0=" media="screen">
+
+
+<script src="https://jasssssson.github.io/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+  
+    <script src="https://jasssssson.github.io/js/toc-collapse.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'c89bf08c2b2dfb45ccf2',
+  clientSecret: 'f208f31147ad5828fba1473bc1718fb6c87e1916',
+  repo: 'Gitalk',
+  owner: 'jASSSSSSON',
+  admin: ['jASSSSSSON'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://jasssssson.github.io">
+    
+        <div class="nav-title">
+            jASSSSSSON&#39;s Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            FIFO,Alaways.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                總覽
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                分類
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                關鍵詞
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	jASSSSSSON
+	
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e8%83%8c%e6%99%af%e4%bf%a1%e6%81%afspan-idbackgrounddescriptionspan" onclick="onNavClick(`#背景信息span-idbackgrounddescriptionspan-nav`)" id="背景信息span-idbackgrounddescriptionspan-nav">
+									背景信息
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%8e%af%e5%a2%83%e4%bb%8b%e7%bb%8dspan-idenvironmentintroductionspan" onclick="onNavClick(`#环境介绍span-idenvironmentintroductionspan-nav`)" id="环境介绍span-idenvironmentintroductionspan-nav">
+									环境介绍
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%baspan-idblogbuildspan" onclick="onNavClick(`#博客搭建span-idblogbuildspan-nav`)" id="博客搭建span-idblogbuildspan-nav">
+									博客搭建
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e6%b3%a8%e5%86%8c" onclick="onNavClick(`#注册-nav`)" id="注册-nav">
+									注册
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%b8%8b%e8%bd%bd" onclick="onNavClick(`#下载-nav`)" id="下载-nav">
+									下载
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae" onclick="onNavClick(`#安装配置-nav`)" id="安装配置-nav">
+									安装配置
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%83%a8%e7%bd%b2%e5%87%86%e5%a4%87" onclick="onNavClick(`#部署准备-nav`)" id="部署准备-nav">
+									部署准备
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%83%a8%e7%bd%b2" onclick="onNavClick(`#部署-nav`)" id="部署-nav">
+									部署
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%bb%86%e8%8a%82span-iddetailspan" onclick="onNavClick(`#细节span-iddetailspan-nav`)" id="细节span-iddetailspan-nav">
+									细节
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#gitalkspan-idenespan" onclick="onNavClick(`#gitalkspan-idenespan-nav`)" id="gitalkspan-idenespan-nav">
+									Gitalk
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%bb%a3%e7%a0%81span-idcodespan" onclick="onNavClick(`#代码span-idcodespan-nav`)" id="代码span-idcodespan-nav">
+									代码
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%bb%93%e8%af%adspan-idepiloguespan" onclick="onNavClick(`#结语span-idepiloguespan-nav`)" id="结语span-idepiloguespan-nav">
+									结语
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    總覽
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    分類
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    關鍵詞
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e8%83%8c%e6%99%af%e4%bf%a1%e6%81%afspan-idbackgrounddescriptionspan" onclick="onNavClick(`#背景信息span-idbackgrounddescriptionspan-nav`)" id="背景信息span-idbackgrounddescriptionspan-nav">
+									背景信息
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%8e%af%e5%a2%83%e4%bb%8b%e7%bb%8dspan-idenvironmentintroductionspan" onclick="onNavClick(`#环境介绍span-idenvironmentintroductionspan-nav`)" id="环境介绍span-idenvironmentintroductionspan-nav">
+									环境介绍
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%baspan-idblogbuildspan" onclick="onNavClick(`#博客搭建span-idblogbuildspan-nav`)" id="博客搭建span-idblogbuildspan-nav">
+									博客搭建
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e6%b3%a8%e5%86%8c" onclick="onNavClick(`#注册-nav`)" id="注册-nav">
+									注册
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%b8%8b%e8%bd%bd" onclick="onNavClick(`#下载-nav`)" id="下载-nav">
+									下载
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae" onclick="onNavClick(`#安装配置-nav`)" id="安装配置-nav">
+									安装配置
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%83%a8%e7%bd%b2%e5%87%86%e5%a4%87" onclick="onNavClick(`#部署准备-nav`)" id="部署准备-nav">
+									部署准备
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%83%a8%e7%bd%b2" onclick="onNavClick(`#部署-nav`)" id="部署-nav">
+									部署
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%bb%86%e8%8a%82span-iddetailspan" onclick="onNavClick(`#细节span-iddetailspan-nav`)" id="细节span-iddetailspan-nav">
+									细节
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#gitalkspan-idenespan" onclick="onNavClick(`#gitalkspan-idenespan-nav`)" id="gitalkspan-idenespan-nav">
+									Gitalk
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%bb%a3%e7%a0%81span-idcodespan" onclick="onNavClick(`#代码span-idcodespan-nav`)" id="代码span-idcodespan-nav">
+									代码
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%bb%93%e8%af%adspan-idepiloguespan" onclick="onNavClick(`#结语span-idepiloguespan-nav`)" id="结语span-idepiloguespan-nav">
+									结语
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://jasssssson.github.io">
+            jASSSSSSON&#39;s Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://jasssssson.github.io">
+        <div class="single-column-header-title">jASSSSSSON&#39;s Blog</div>
+        
+        <div class="single-column-header-subtitle">FIFO,Alaways.</div>
+        
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+                
+            
+
+            <div class="post-head-wrapper"
+                
+                    
+                    
+                    style="background-image: url('https://www.962v.com/images/2020/08/11/ph.jpg')"
+                    
+                
+            >
+                <div class="post-title">
+                    搭建GithubPage博客(Hugo)
+                    
+                    <div class="post-subtitle">
+                        使用Diary主题模板生成
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-08-11 18:07
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/%E9%85%8D%E7%BD%AE">配置</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/%E9%85%8D%E7%BD%AE">配置</a>
+                                &nbsp;
+                            
+                                <a href="/tags/github">github</a>
+                                &nbsp;
+                            
+                                <a href="/tags/blog">blog</a>
+                                &nbsp;
+                            
+                                <a href="/tags/gitalk">gitalk</a>
+                                &nbsp;
+                            
+                                <a href="/tags/hugo">hugo</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h2 id="背景信息span-idbackgrounddescriptionspan">背景信息<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>  使用Hugo初始化静态页面，<a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a>主题模板，这款主题带有Gitalk功能模块，统一在<code>cofig.toml</code>内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转<br>
+<a href="#backgrounddescription">背景信息</a><br>
+<a href="#environmentintroduction">环境介绍</a><br>
+<a href="#blogbuild">博客搭建</a><br>
+<a href="#detail">细节</a><br>
+<a href="#code">代码</a><br>
+<a href="#epilogue">结语</a></p>
+<hr>
+<h2 id="环境介绍span-idenvironmentintroductionspan">环境介绍<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>操作系统：Windows10<br>
+Git: 2.28.0 x64<br>
+静态博客生成工具：Hugo-0.74.3<br>
+主题：Diary-1.2.0</p>
+<hr>
+<h2 id="博客搭建span-idblogbuildspan">博客搭建<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<ol>
+<li>
+<h3 id="注册">注册</h3>
+<p>  首先，既然是利用GithubPage，所以需要一个Github账户，如果没有，请先注册一个，点击下方传送门可以直接跳转，已经注册过就可以跳过这步了。<br>
+需要注意的是，第一次打开页面，这就是注册，按要求输入信息即可，<code>Username</code>不可重复，后续是URL中的标识，重名了就改一个吧！<code>:)</code><br>
+<a href="https://github.com/">Github.com</a>
+<img src="https://www.962v.com/images/2020/08/11/github_com.png" alt="Github.com"></p>
+</li>
+<li>
+<h3 id="下载">下载</h3>
+<p>  账号准备就绪了后，就需要下载Git客户端以及Hugo了，附上传送门。<br>
+<code>注意</code> : 选择自己的版本和对应<code>x86</code>/<code>x64</code>版本(<code>x86</code>是32位/bit，<code>x64</code>是64位/bit)，不要下载其他操作系统的文件！<br>
+<a href="https://git-scm.com/download/">Git</a> 
+<img src="https://www.962v.com/images/2020/08/11/gitDown.png" alt="GitDown"></p>
+<p><a href="https://git-scm.com/download/win">Git(win)</a><br>
+<img src="https://www.962v.com/images/2020/08/11/gitWin.png" alt="GitWin"></p>
+<p><a href="https://github.com/gohugoio/hugo/releases">Hugo</a>(版本很多，windows的在下方) 
+<img src="https://www.962v.com/images/2020/08/11/hugoRelease.png" alt="hugoRelease"></p>
+</li>
+<li>
+<h3 id="安装配置">安装配置</h3>
+<ul>
+<li>Git<br>
+  全部都下载好后，进行安装与配置，这里转载一下其他博主的文章，大家看看，只需要配置<code>Git</code>能够使用即可。
+转载：<a href="https://blog.csdn.net/huangqqdy/article/details/83032408">Git下载、安装与环境配置</a></li>
+<li>Hugo
+<ul>
+<li>将下载的文件解压，得到<code>hugo.exe</code>文件，然后如上一篇博文一样，将文件放到自己想要的位置后，添加环境变量<code>path</code>为文件所在目录即可(如D://software)。<br>
+验证Hugo是否安装成功：<code>[hugo version]</code></li>
+<li>接下来新建一个文件夹，用来装静态网页，使用<code>[hugo new site 自定义站点名称]</code>，需要在文件夹内使用<code>CMD</code>命令，可以在文件夹地址栏输入<code>[cmd]</code>打开<code>CMD</code>再使用新建命令。</li>
+<li>新建完成后，应该会产生如下图所示结构
+<pre><code>├─archetypes
+├─content
+├─data
+├─layouts
+├─static
+├─themes
+└─config.toml
+</code></pre><p>这个时候就需要挑选一款自己喜欢的主题了，传送门 ： <a href="https://themes.gohugo.io/">Hugo主题</a><br>
+挑选主题多注意主题作者的文档，里面记录了如何配置主题参数。</p>
+</li>
+<li>将主题下载到本地后，移动到站点下的<code>themes</code>文件夹，并将里面的<code>config.toml</code>移动出来覆盖外面的配置文件，接下来，在站点文件夹下使用<code>CMD</code>命令<code>hugo server</code>开启本地测试，调试参数，直到满意，访问地址为<a href="http://localhost:1313"><code>http://localhost:1313</code></a>(注意主题文档，有一部分需要配置<code>config.toml</code>文件才能正常使用)</li>
+<li>如果测试无误，进入下一个环节。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="部署准备">部署准备</h3>
+<p>  进入<code>Github</code>主页，新建一个仓库，仓库名为：<code>[你的用户名].github.io</code>(以下简称<code>Page仓库</code>)，使用自动初始化，然后打开你的本地<code>Git</code>仓库，使用命令将<code>Page仓库</code> <code>[clone]</code>下来。<br>
+如需配置<code>Gitalk</code>请看：进入用户设置，左边最后一栏<code>Developer settings</code> - <code>oAuth Apps</code>,右侧点击<code>New oAuth</code><br>
+<img src="https://www.962v.com/images/2020/08/11/oAuthegister.png" alt="oAuth"></p>
+<p>记录下<code>[Client ID]</code>和<code>[Client Secret]</code>
+<img src="https://www.962v.com/images/2020/08/11/jota.png" alt="AppInfo"></p>
+<p>回到你的<code>静态网页站点</code>，将<code>config.toml</code>中的<code>[baseURL]</code>地址改为<code>[https://Page仓库名]</code>，按照文档进行额外修改，最后使用<code>[hugo]</code>命令生成根目录下<code>public文件夹</code>，准备完成。</p>
+</li>
+<li>
+<h3 id="部署">部署</h3>
+<p>将本地的<code>Page仓库</code>内的文件复制到<code>public文件夹</code>内，在内部使用<code>Git</code>命令将文件夹上传，顺序如下 :</p>
+<ul>
+<li><code>[git add -A]</code></li>
+<li><code>[git commit -m &quot;上传说明&quot;]</code></li>
+<li><code>[git push - u origin master]</code></li>
+</ul>
+<p>也许会要求输入账号密码，按照要求输入即可(密码看不见，保护隐私)。<br>
+上传完成后，访问<code>[baseURL]</code>地址，你的博客准备好了，以后每次都使用<code>[hugo]</code>修改<code>public文件夹</code>,再上传即可。</p>
+</li>
+</ol>
+<hr>
+<h2 id="细节span-iddetailspan">细节<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<ol>
+<li>
+<h3 id="gitalkspan-idenespan"><code>Gitalk</code><!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+  这次我还配置了<code>Gitalk</code>,遇到的问题详见<a href="https://jasssssson.github.io/githubblog/">搭建博客中遇到的问题(Gitalk)</a>。值得一提的就是根据不同的主题，如果想要开启评论，需要在<code>config.toml</code>中设置组件启用，在文章的元数据内开启评论。</li>
+</ol>
+<hr>
+<h2 id="代码span-idcodespan">代码<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<ol>
+<li><code>config.toml</code></li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://xxx.github.io&#34;</span>
+<span style="color:#a6e22e">DefaultContentLanguage</span> = <span style="color:#e6db74">&#34;zh&#34;</span> <span style="color:#75715e"># Theme&#39;s display language, supports: en, fr, zh, zh-hant</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;xxx&#39;s Blog&#34;</span>
+<span style="color:#a6e22e">copyright</span> = <span style="color:#e6db74">&#34;xxx&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;diary&#34;</span>
+
+[<span style="color:#a6e22e">markup</span>]
+  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">highlight</span>]
+    <span style="color:#a6e22e">codeFences</span> = <span style="color:#66d9ef">true</span>
+    <span style="color:#a6e22e">guessSyntax</span> = <span style="color:#66d9ef">false</span>
+    <span style="color:#a6e22e">hl_Lines</span> = <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#a6e22e">lineNoStart</span> = <span style="color:#ae81ff">1</span>
+    <span style="color:#a6e22e">lineNos</span> = <span style="color:#66d9ef">false</span>
+    <span style="color:#a6e22e">lineNumbersInTable</span> = <span style="color:#66d9ef">true</span>
+    <span style="color:#a6e22e">noClasses</span> = <span style="color:#66d9ef">true</span>
+    <span style="color:#a6e22e">style</span> = <span style="color:#e6db74">&#34;monokai&#34;</span>
+    <span style="color:#a6e22e">tabWidth</span> = <span style="color:#ae81ff">4</span>
+
+[<span style="color:#a6e22e">params</span>]
+<span style="color:#a6e22e">subtitle</span> = <span style="color:#e6db74">&#34;a subtitle&#34;</span>
+<span style="color:#a6e22e">enableGitalk</span> = <span style="color:#66d9ef">true</span> <span style="color:#75715e"># 开启Gitalk</span>
+<span style="color:#a6e22e">favicon</span> = <span style="color:#e6db74">&#34;/images/icon.ico&#34;</span>
+
+<span style="color:#75715e"># Twitter Card and Open Graph settings</span>
+<span style="color:#a6e22e">enableOpenGraph</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">enableTwitterCards</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My Blog&#34;</span> <span style="color:#75715e"># will set &#39;og:site_name&#39;</span>
+<span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;My HomePage Description&#34;</span>  <span style="color:#75715e"># will set &#39;og:description&#39;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">gitalk</span>]
+  <span style="color:#a6e22e">owner</span> = <span style="color:#e6db74">&#34;你的GitName&#34;</span>
+  <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;你的仓库名称&#34;</span> <span style="color:#75715e"># 如Gitalk</span>
+  <span style="color:#a6e22e">client_id</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 填入记录的Client ID</span>
+  <span style="color:#a6e22e">client_secret</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 填入记录的Client Secret</span>
+[<span style="color:#a6e22e">taxonomies</span>]
+   <span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+   <span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+
+[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories&#34;</span> <span style="color:#75715e"># 侧边栏映射</span>
+<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;categories&#34;</span> <span style="color:#75715e"># 侧边栏名称(我的繁体字是输入就是繁体不是上面的DefaultContentLanguage)</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span> <span style="color:#75715e"># 优先级，越小越靠上</span>
+[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags&#34;</span>
+<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts&#34;</span>
+<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/index.xml&#34;</span>
+<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;RSS Feed&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">4</span>
+</code></pre></div><ol start="2">
+<li><code>.md</code></li>
+</ol>
+<pre><code class="language-properties" data-lang="properties">title: &quot;文章大标题&quot;
+date: 2020-08-11T14:15:30+08:00
+description: &quot;副标题&quot;
+#标签，会自动出现在Tags菜单内，但不会自动删除，需要使用Hugo重新生成public时才会去除
+tags: [配置, github,blog]  
+featured_image: &quot;图片地址&quot;
+#分类
+categories: 配置
+#开启评论
+comment : ture
+</code></pre><hr>
+<h2 id="结语span-idepiloguespan">结语<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>  感谢阅读我的博客，希望能给你带来帮助。<code>:)</code> <a href="https://github.com/jASSSSSSON">@jASSSSSSON</a></p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2020-08-11</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+			下回<br>已经到头啦。
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/">
+			上回<br>搭建博客中遇到的问题(Gitalk）
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	jASSSSSSON
+	
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="https://jasssssson.github.io/js/journal.js"></script>
+    </body>
+</html>
