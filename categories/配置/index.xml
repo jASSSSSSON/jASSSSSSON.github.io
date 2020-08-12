@@ -85,7 +85,7 @@ Idea:2020.1-x64 Maven:3
   项目初始化  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如
  ├─com ├─applicaton └─applicaton.java #启动器 ├─test #可以扫描到 └─test.java #可以扫描到 └─...#可以扫描到 ├─... #可以扫描到 ├─demo # 无法扫描到   编写HelloWorld  在此之前，为了结构方便管理，我将启动器转移到了[com]下(以前在[com.demo])，需要注意的是，启动器变更位置需要调整配置，如果是在Idea里拖动文件则不会(Idea会查找所有引用到的地方统一修改点赞！:))，在外部跳转的话需要去[.idea]下的workspace.xml里寻找component name=&amp;quot;RunManager&amp;quot;&amp;gt;将里面的&amp;lt;option name=&amp;quot;SPRING_BOOT_MAIN_CLASS&amp;quot; value=&amp;quot;com.DemoApplication&amp;quot; /&amp;gt;中的value改为对应启动器的路径。
 [注意] : 启动器不可以直接放到[java]下！至少有一个父包。 然后使用注解的方式编写控制器(@RestController是@Controller与@ResponseBody的集合)。   运行  需要先行配置一下数据库，如果没有的话请添加@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})，然后引入相关包即可。 恭喜！:)
-   代码 请点击传送门前往Github项目&amp;mdash;&amp;gt;
+   代码  请点击传送门前往Github项目&amp;mdash;&amp;gt;
  结语  感谢阅读我的博客，希望能给你带来帮助。:) @jASSSSSSON</description>
     </item>
     
