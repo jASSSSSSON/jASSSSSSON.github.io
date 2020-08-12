@@ -698,7 +698,7 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                             
                             7 min
                             
-                            47 s.
+                            57 s.
                         
                     </div>
                 </div>
@@ -739,8 +739,7 @@ Git: 2.28.0 x64<br>
 <img src="https://www.962v.com/images/2020/08/11/GitalkParams.png" alt="GitalkParams"></p>
 <p>我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了<code>[Error: Network Error]</code>，但很快就解决了，接下来这个<code>[Error: Not Found]</code>可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：<code>[repo]=&quot;填写自己的仓库&quot;</code>，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)<br>
 <img src="https://www.962v.com/images/2020/08/11/gitalk.png" alt="GitalkRrepositories"></p>
-<p>但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址<a href="https://jasssssson.github.io">https://jasssssson.github.io</a>。<br>
-一开始加上了<code>[.git]</code>尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是<code>[Error: Network Error]</code>，后面改好后测试有些时候切换了浏览器，一会又是<code>[Error: Not Found]</code>，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉<code>[.git]</code>的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。<code>:)</code></p>
+<p>但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址<a href="https://jasssssson.github.io">https://jasssssson.github.io</a>。一开始加上了<code>[.git]</code>尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是<code>[Error: Network Error]</code>，后面改好后测试有些时候切换了浏览器，一会又是<code>[Error: Not Found]</code>，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉<code>[.git]</code>的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。<code>:)</code></p>
 </li>
 </ol>
 <hr>
@@ -770,7 +769,7 @@ Git: 2.28.0 x64<br>
 [<span style="color:#a6e22e">params</span>]
 <span style="color:#a6e22e">subtitle</span> = <span style="color:#e6db74">&#34;a subtitle&#34;</span>
 <span style="color:#a6e22e">enableGitalk</span> = <span style="color:#66d9ef">true</span> <span style="color:#75715e"># 开启Gitalk</span>
-<span style="color:#a6e22e">favicon</span> = <span style="color:#e6db74">&#34;/images/icon.ico&#34;</span>
+<span style="color:#a6e22e">favicon</span> = <span style="color:#e6db74">&#34;/images/icon.ico&#34;</span> <span style="color:#75715e"># 显示在浏览器标签栏上的小图标，由于格式特殊，文件过小，所以就没有使用图床</span>
 
 <span style="color:#75715e"># Twitter Card and Open Graph settings</span>
 <span style="color:#a6e22e">enableOpenGraph</span> = <span style="color:#66d9ef">true</span>
