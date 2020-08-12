@@ -19,7 +19,7 @@
         
         <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
         <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/ -&lt;h2 id=&#34;背景信息&#34;&gt;背景信息&lt;/h2&gt;
-&lt;p&gt;  使用Hugo初始化静态页面，&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题模板，这款主题带有Gitalk功能模块，统一在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转&lt;br&gt;
+&lt;p&gt;  使用Hugo初始化静态页面，&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题模板，这款主题带有&lt;a href=&#34;#gitalk&#34;&gt;Gitalk&lt;/a&gt;功能模块，统一在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转&lt;br&gt;
 &lt;a href=&#34;#%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF&#34;&gt;背景信息&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
@@ -106,7 +106,7 @@ Git: 2.28.0 x64&lt;br&gt;
 &lt;h2 id=&#34;细节&#34;&gt;细节&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;h3 id=&#34;gitalkspan-idenespan&#34;&gt;&lt;code&gt;Gitalk&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;gitalk&#34;&gt;&lt;code&gt;Gitalk&lt;/code&gt;&lt;/h3&gt;
   这次我还配置了&lt;code&gt;Gitalk&lt;/code&gt;,遇到的问题详见&lt;a href=&#34;https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog&#34;&gt;搭建博客中遇到的问题(Gitalk)&lt;/a&gt;。值得一提的就是根据不同的主题，如果想要开启评论，需要在&lt;code&gt;config.toml&lt;/code&gt;中设置组件启用，在文章的元数据内开启评论。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
@@ -197,7 +197,7 @@ comment : ture
         
         <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
         <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/ -&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
-&lt;p&gt;  在使用Hugo初始化静态页面时，使用了&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题，这款主题带有Gitalk功能模块，需要在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误 &lt;a href=&#34;#ene&#34;&gt;&lt;code&gt;[Error: Network Error]&lt;/code&gt;&lt;/a&gt; (问题解决方案可点击跳到相应部分)，后来又出现 &lt;a href=&#34;#enf&#34;&gt;&lt;code&gt;[Error: Not Found]&lt;/code&gt;&lt;/a&gt; 是本次问题关注点，如需跳转，请点击下方快速跳转&lt;br&gt;
+&lt;p&gt;  在使用Hugo初始化静态页面时，使用了&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Diary&lt;/a&gt;主题，这款主题带有Gitalk功能模块，需要在&lt;code&gt;cofig.toml&lt;/code&gt;内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误&lt;a href=&#34;#error-network-error&#34;&gt;&lt;code&gt;[Error: Network Error]&lt;/code&gt;&lt;/a&gt; (问题解决方案可点击跳到相应部分)，后来又出现 &lt;a href=&#34;#error-not-found&#34;&gt;&lt;code&gt;[Error: Not Found]&lt;/code&gt;&lt;/a&gt; 是本次问题关注点，如需跳转，请点击下方快速跳转&lt;br&gt;
 &lt;a href=&#34;#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0&#34;&gt;问题描述&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#34;&gt;博客搭建&lt;/a&gt;&lt;br&gt;
@@ -216,13 +216,13 @@ Git: 2.28.0 x64&lt;br&gt;
 &lt;h2 id=&#34;解决方案&#34;&gt;解决方案&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;h3 id=&#34;error-network-errorspan-idenespan&#34;&gt;&lt;code&gt;Error: Network Error&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;error-network-error&#34;&gt;&lt;code&gt;Error: Network Error&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;  首先，提示词已经非常清晰了，所以请检查配置文件&lt;code&gt;config,toml&lt;/code&gt;内的&lt;code&gt;[baseURL]&lt;/code&gt;设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示&lt;code&gt;[Error: Network Error]&lt;/code&gt;,所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用&lt;code&gt;CTRL+F5&lt;/code&gt;强制刷新，避免缓存影响测试。&lt;br&gt;
 &lt;img src=&#34;https://www.962v.com/images/2020/08/11/baseURL1.png&#34; alt=&#34;baseURL&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;注意&lt;/code&gt; : 如果是用GitPage的博客地址，&lt;code&gt;[https://XXX.github.io]&lt;/code&gt;后什么都不要加，还有&lt;code&gt;属性&lt;/code&gt;要用&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;包裹，我改的时候有一次就把前面的&lt;code&gt;&amp;quot;&lt;/code&gt;给删掉了。&lt;code&gt;:(&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;h3 id=&#34;error-not-foundspan-idenfspan&#34;&gt;&lt;code&gt;Error: Not Found&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;error-not-found&#34;&gt;&lt;code&gt;Error: Not Found&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件&lt;code&gt;config.toml&lt;/code&gt;内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;&lt;code&gt;[你的仓库名称]&lt;/code&gt;&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)&lt;br&gt;
 &lt;img src=&#34;https://www.962v.com/images/2020/08/11/GitalkParams.png&#34; alt=&#34;GitalkParams&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了&lt;code&gt;[Error: Network Error]&lt;/code&gt;，但很快就解决了，接下来这个&lt;code&gt;[Error: Not Found]&lt;/code&gt;可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：&lt;code&gt;[repo]=&amp;quot;填写自己的仓库&amp;quot;&lt;/code&gt;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)&lt;br&gt;
@@ -317,7 +317,70 @@ comment : ture
         <pubDate>Mon, 10 Aug 2020 13:51:30 +0800</pubDate>
         
         <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/ -- https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/ - jASSSSSSON</description>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/ -&lt;h2 id=&#34;背景信息&#34;&gt;背景信息&lt;/h2&gt;
+&lt;p&gt;使用Idea搭建项目，Spring Initializr生成项目结构，下面是快速跳转入口，如有需要，请点击进行快速跳转&lt;br&gt;
+&lt;a href=&#34;#%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF&#34;&gt;背景信息&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA&#34;&gt;项目搭建&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E4%BB%A3%E7%A0%81&#34;&gt;代码&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%BB%93%E8%AF%AD&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;环境介绍&#34;&gt;环境介绍&lt;/h2&gt;
+&lt;p&gt;操作系统：Windows10&lt;br&gt;
+Idea:2020.1-x64
+Maven:3&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;项目搭建&#34;&gt;项目搭建&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;打开idea&#34;&gt;打开Idea&lt;/h3&gt;
+&lt;p&gt;  点击新建项目&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/12/IdeaC.png&#34; alt=&#34;IdeaC&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;设置参数&#34;&gt;设置参数&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo.png&#34; alt=&#34;IdeaSpringbootDemo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo1.png&#34; alt=&#34;IdeaSpringbootDemo1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;注意勾选依赖&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo2.png&#34; alt=&#34;IdeaSpringbootDemo2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo3.png&#34; alt=&#34;IdeaSpringbootDemo3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo4.png&#34; alt=&#34;IdeaSpringbootDemo4&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;项目初始化&#34;&gt;项目初始化&lt;/h3&gt;
+&lt;p&gt;  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; ├─com
+    ├─applicaton
+      └─applicaton.java #启动器
+      ├─test #可以扫描到
+        └─test.java #可以扫描到
+        └─...#可以扫描到
+      ├─... #可以扫描到
+    ├─demo  # 无法扫描到
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo5.png&#34; alt=&#34;IdeaSpringbootDemo5&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;编写helloworld&#34;&gt;编写HelloWorld&lt;/h3&gt;
+&lt;p&gt;  在此之前，为了结构方便管理，我将启动器转移到了&lt;code&gt;[com]&lt;/code&gt;下(以前在&lt;code&gt;[com.demo]&lt;/code&gt;)，需要注意的是，启动器变更位置需要调整配置，如果是在Idea里拖动文件则不会(Idea会查找所有引用到的地方统一修改&lt;code&gt;点赞！:)&lt;/code&gt;)，在外部跳转的话需要去&lt;code&gt;[.idea]&lt;/code&gt;下的&lt;code&gt;workspace.xml&lt;/code&gt;里寻找&lt;code&gt;component name=&amp;quot;RunManager&amp;quot;&amp;gt;&lt;/code&gt;将里面的&lt;code&gt;&amp;lt;option name=&amp;quot;SPRING_BOOT_MAIN_CLASS&amp;quot; value=&amp;quot;com.DemoApplication&amp;quot; /&amp;gt;&lt;/code&gt;中的&lt;code&gt;value&lt;/code&gt;改为对应启动器的路径。&lt;br&gt;
+&lt;code&gt;[注意]&lt;/code&gt; : 启动器不可以直接放到&lt;code&gt;[java]&lt;/code&gt;下！至少有一个父包。
+然后使用注解的方式编写控制器(&lt;code&gt;@RestController&lt;/code&gt;是&lt;code&gt;@Controller&lt;/code&gt;与&lt;code&gt;@ResponseBody&lt;/code&gt;的集合)。
+&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo6.png&#34; alt=&#34;IdeaSpringbootDemo6&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;运行&#34;&gt;运行&lt;/h3&gt;
+&lt;p&gt;  需要先行配置一下数据库，如果没有的话请添加&lt;code&gt;@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})&lt;/code&gt;，然后引入相关包即可。
+&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo7.png&#34; alt=&#34;IdeaSpringbootDemo7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;恭喜！&lt;code&gt;:)&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://www.962v.com/images/2020/08/12/SpringbootDemo8.png&#34; alt=&#34;IdeaSpringbootDemo8&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jASSSSSSON/Springboot&#34;&gt;请点击传送门前往Github项目&amp;mdash;&amp;gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;  感谢阅读我的博客，希望能给你带来帮助。&lt;code&gt;:)&lt;/code&gt; &lt;a href=&#34;https://github.com/jASSSSSSON&#34;&gt;@jASSSSSSON&lt;/a&gt;&lt;/p&gt;
+- https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/ - jASSSSSSON</description>
         </item>
     
     

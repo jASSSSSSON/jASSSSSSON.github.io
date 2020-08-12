@@ -10,14 +10,14 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="待完成">
+<meta name="description" content="使用Idea快速生成Springboot项目，并展示HelloWorld">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
 
 
 <meta property="og:title" content="简单配置Springboot（Idea）" />
-<meta property="og:description" content="待完成" />
+<meta property="og:description" content="使用Idea快速生成Springboot项目，并展示HelloWorld" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/" />
 <meta property="article:published_time" content="2020-08-10T13:51:30+08:00" />
@@ -29,7 +29,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="简单配置Springboot（Idea）"/>
-<meta name="twitter:description" content="待完成"/>
+<meta name="twitter:description" content="使用Idea快速生成Springboot项目，并展示HelloWorld"/>
 
 
 
@@ -182,6 +182,211 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
     <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
 
 
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e8%83%8c%e6%99%af%e4%bf%a1%e6%81%af" onclick="onNavClick(`#背景信息-nav`)" id="背景信息-nav">
+									背景信息
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%8e%af%e5%a2%83%e4%bb%8b%e7%bb%8d" onclick="onNavClick(`#环境介绍-nav`)" id="环境介绍-nav">
+									环境介绍
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%a1%b9%e7%9b%ae%e6%90%ad%e5%bb%ba" onclick="onNavClick(`#项目搭建-nav`)" id="项目搭建-nav">
+									项目搭建
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e6%89%93%e5%bc%80idea" onclick="onNavClick(`#打开idea-nav`)" id="打开idea-nav">
+									打开Idea
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%ae%be%e7%bd%ae%e5%8f%82%e6%95%b0" onclick="onNavClick(`#设置参数-nav`)" id="设置参数-nav">
+									设置参数
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%a1%b9%e7%9b%ae%e5%88%9d%e5%a7%8b%e5%8c%96" onclick="onNavClick(`#项目初始化-nav`)" id="项目初始化-nav">
+									项目初始化
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%bc%96%e5%86%99helloworld" onclick="onNavClick(`#编写helloworld-nav`)" id="编写helloworld-nav">
+									编写HelloWorld
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%bf%90%e8%a1%8c" onclick="onNavClick(`#运行-nav`)" id="运行-nav">
+									运行
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%bb%a3%e7%a0%81" onclick="onNavClick(`#代码-nav`)" id="代码-nav">
+									代码
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%bb%93%e8%af%ad" onclick="onNavClick(`#结语-nav`)" id="结语-nav">
+									结语
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
 </div>
     
     <div class="pagination">
@@ -255,6 +460,211 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
             <div class="toc">
 
 
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e8%83%8c%e6%99%af%e4%bf%a1%e6%81%af" onclick="onNavClick(`#背景信息-nav`)" id="背景信息-nav">
+									背景信息
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%8e%af%e5%a2%83%e4%bb%8b%e7%bb%8d" onclick="onNavClick(`#环境介绍-nav`)" id="环境介绍-nav">
+									环境介绍
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%a1%b9%e7%9b%ae%e6%90%ad%e5%bb%ba" onclick="onNavClick(`#项目搭建-nav`)" id="项目搭建-nav">
+									项目搭建
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								<ul class="collapse" data-toggle="collapse">
+							
+						
+						
+							<li>
+								<a href="#%e6%89%93%e5%bc%80idea" onclick="onNavClick(`#打开idea-nav`)" id="打开idea-nav">
+									打开Idea
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%ae%be%e7%bd%ae%e5%8f%82%e6%95%b0" onclick="onNavClick(`#设置参数-nav`)" id="设置参数-nav">
+									设置参数
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e9%a1%b9%e7%9b%ae%e5%88%9d%e5%a7%8b%e5%8c%96" onclick="onNavClick(`#项目初始化-nav`)" id="项目初始化-nav">
+									项目初始化
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%bc%96%e5%86%99helloworld" onclick="onNavClick(`#编写helloworld-nav`)" id="编写helloworld-nav">
+									编写HelloWorld
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%bf%90%e8%a1%8c" onclick="onNavClick(`#运行-nav`)" id="运行-nav">
+									运行
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%bb%a3%e7%a0%81" onclick="onNavClick(`#代码-nav`)" id="代码-nav">
+									代码
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%bb%93%e8%af%ad" onclick="onNavClick(`#结语-nav`)" id="结语-nav">
+									结语
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
 </div>
             
         </div>
@@ -318,7 +728,7 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                     简单配置Springboot（Idea）
                     
                     <div class="post-subtitle">
-                        待完成
+                        使用Idea快速生成Springboot项目，并展示HelloWorld
                     </div>
                     
                     <div class="post-meta">
@@ -355,7 +765,9 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                             
 
                             
-                            0 s.
+                            3 min
+                            
+                            34 s.
                         
                     </div>
                 </div>
@@ -365,7 +777,70 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
                 <div class="post-body" v-pre>
                 
-                    
+                    <h2 id="背景信息">背景信息</h2>
+<p>使用Idea搭建项目，Spring Initializr生成项目结构，下面是快速跳转入口，如有需要，请点击进行快速跳转<br>
+<a href="#%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF">背景信息</a><br>
+<a href="#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D">环境介绍</a><br>
+<a href="#%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA">项目搭建</a><br>
+<a href="#%E4%BB%A3%E7%A0%81">代码</a><br>
+<a href="#%E7%BB%93%E8%AF%AD">结语</a></p>
+<hr>
+<h2 id="环境介绍">环境介绍</h2>
+<p>操作系统：Windows10<br>
+Idea:2020.1-x64
+Maven:3</p>
+<hr>
+<h2 id="项目搭建">项目搭建</h2>
+<ol>
+<li>
+<h3 id="打开idea">打开Idea</h3>
+<p>  点击新建项目<br>
+<img src="https://www.962v.com/images/2020/08/12/IdeaC.png" alt="IdeaC"></p>
+</li>
+<li>
+<h3 id="设置参数">设置参数</h3>
+<p><img src="https://www.962v.com/images/2020/08/12/SpringbootDemo.png" alt="IdeaSpringbootDemo"></p>
+<p><img src="https://www.962v.com/images/2020/08/12/SpringbootDemo1.png" alt="IdeaSpringbootDemo1"></p>
+<p><code>注意勾选依赖</code><br>
+<img src="https://www.962v.com/images/2020/08/12/SpringbootDemo2.png" alt="IdeaSpringbootDemo2"></p>
+<p><img src="https://www.962v.com/images/2020/08/12/SpringbootDemo3.png" alt="IdeaSpringbootDemo3"></p>
+<p><img src="https://www.962v.com/images/2020/08/12/SpringbootDemo4.png" alt="IdeaSpringbootDemo4"></p>
+</li>
+<li>
+<h3 id="项目初始化">项目初始化</h3>
+<p>  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如</p>
+<pre><code> ├─com
+    ├─applicaton
+      └─applicaton.java #启动器
+      ├─test #可以扫描到
+        └─test.java #可以扫描到
+        └─...#可以扫描到
+      ├─... #可以扫描到
+    ├─demo  # 无法扫描到
+</code></pre><p><img src="https://www.962v.com/images/2020/08/12/SpringbootDemo5.png" alt="IdeaSpringbootDemo5"></p>
+</li>
+<li>
+<h3 id="编写helloworld">编写HelloWorld</h3>
+<p>  在此之前，为了结构方便管理，我将启动器转移到了<code>[com]</code>下(以前在<code>[com.demo]</code>)，需要注意的是，启动器变更位置需要调整配置，如果是在Idea里拖动文件则不会(Idea会查找所有引用到的地方统一修改<code>点赞！:)</code>)，在外部跳转的话需要去<code>[.idea]</code>下的<code>workspace.xml</code>里寻找<code>component name=&quot;RunManager&quot;&gt;</code>将里面的<code>&lt;option name=&quot;SPRING_BOOT_MAIN_CLASS&quot; value=&quot;com.DemoApplication&quot; /&gt;</code>中的<code>value</code>改为对应启动器的路径。<br>
+<code>[注意]</code> : 启动器不可以直接放到<code>[java]</code>下！至少有一个父包。
+然后使用注解的方式编写控制器(<code>@RestController</code>是<code>@Controller</code>与<code>@ResponseBody</code>的集合)。
+<img src="https://www.962v.com/images/2020/08/12/SpringbootDemo6.png" alt="IdeaSpringbootDemo6"></p>
+</li>
+<li>
+<h3 id="运行">运行</h3>
+<p>  需要先行配置一下数据库，如果没有的话请添加<code>@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})</code>，然后引入相关包即可。
+<img src="https://www.962v.com/images/2020/08/12/SpringbootDemo7.png" alt="IdeaSpringbootDemo7"></p>
+<p>恭喜！<code>:)</code><br>
+<img src="https://www.962v.com/images/2020/08/12/SpringbootDemo8.png" alt="IdeaSpringbootDemo8"></p>
+</li>
+</ol>
+<hr>
+<h2 id="代码">代码</h2>
+<p><a href="https://github.com/jASSSSSSON/Springboot">请点击传送门前往Github项目&mdash;&gt;</a></p>
+<hr>
+<h2 id="结语">结语</h2>
+<p>  感谢阅读我的博客，希望能给你带来帮助。<code>:)</code> <a href="https://github.com/jASSSSSSON">@jASSSSSSON</a></p>
+
                     
                     <HR width="100%" id="EOF">
 		    <p style="color:#777;">最后修改于 2020-08-10</p>

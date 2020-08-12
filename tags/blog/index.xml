@@ -47,7 +47,7 @@ Hugo(版本很多，windows的在下方)   安装配置  Git
       <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
-      <description>问题描述  在使用Hugo初始化静态页面时，使用了Diary主题，这款主题带有Gitalk功能模块，需要在cofig.toml内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误 [Error: Network Error] (问题解决方案可点击跳到相应部分)，后来又出现 [Error: Not Found] 是本次问题关注点，如需跳转，请点击下方快速跳转
+      <description>问题描述  在使用Hugo初始化静态页面时，使用了Diary主题，这款主题带有Gitalk功能模块，需要在cofig.toml内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误[Error: Network Error] (问题解决方案可点击跳到相应部分)，后来又出现 [Error: Not Found] 是本次问题关注点，如需跳转，请点击下方快速跳转
 问题描述
 环境介绍
 博客搭建
