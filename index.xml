@@ -141,159 +141,6 @@ mybatis.type-aliases-package=com.mapper
     
     
         <item>
-        <title>藏句阁</title>
-        <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</link>
-        <pubDate>Tue, 11 Aug 2020 13:25:05 -0400</pubDate>
-        
-        <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/ -&lt;h2 id=&#34;三更灯火五更鸡正是男儿读书时黑发不知勤学早白首方悔读书迟&#34;&gt;三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。&lt;/h2&gt;
-&lt;p&gt;—— 颜真卿&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;发现者尤其是一个初出茅庐的年轻发现者需要勇气才能无视他人的冷漠和怀疑才能坚信自己发现的意义并把研究继续下去&#34;&gt;发现者，尤其是一个初出茅庐的年轻发现者，需要勇气才能无视他人的冷漠和怀疑，才能坚信自己发现的意义，并把研究继续下去。&lt;/h2&gt;
-&lt;p&gt;—— 贝弗里奇&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;沉浸于现实的忙碌之中没有时间和精力思念过去成功也就不会太远了&#34;&gt;沉浸于现实的忙碌之中，没有时间和精力思念过去，成功也就不会太远了。&lt;/h2&gt;
-&lt;p&gt;—— 雷音&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;学习知识要善于思考思考再思我就是靠这个方法成为科学家的&#34;&gt;学习知识要善于思考，思考，再思。我就是靠这个方法成为科学家的。&lt;/h2&gt;
-&lt;p&gt;—— 爱因斯坦&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
-- https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/ - jASSSSSSON</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>三字经</title>
-        <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</link>
-        <pubDate>Tue, 11 Aug 2020 11:25:05 -0400</pubDate>
-        
-        <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/ -&lt;h2 id=&#34;人之初性本善性相近习相远&#34;&gt;人之初，性本善。性相近，习相远。&lt;/h2&gt;
-&lt;p&gt;苟不教，性乃迁。教之道，贵以专。&lt;br&gt;
-昔孟母，择邻处。子不学，断机杼。&lt;br&gt;
-窦燕山，有义方。教五子，名俱扬。&lt;br&gt;
-养不教，父之过。教不严，师之惰。&lt;br&gt;
-子不学，非所宜。幼不学，老何为。&lt;br&gt;
-玉不琢，不成器。人不学，不知义。&lt;br&gt;
-为人子，方少时。亲师友，习礼仪。&lt;br&gt;
-香九龄，能温席。孝于亲，所当执。&lt;br&gt;
-融四岁，能让梨。弟于长，宜先知。&lt;br&gt;
-首孝悌，次见闻。知某数，识某文。&lt;br&gt;
-一而十，十而百。百而千，千而万。&lt;br&gt;
-三才者，天地人。三光者，日月星。&lt;br&gt;
-三纲者，君臣义。父子亲，夫妇顺。&lt;br&gt;
-曰春夏，曰秋冬。此四时，运不穷。&lt;br&gt;
-曰南北，曰西东。此四方，应乎中。&lt;br&gt;
-曰水火，木金土。此五行，本乎数。&lt;br&gt;
-十干者，甲至癸。十二支，子至亥。&lt;br&gt;
-曰黄道，日所躔。曰赤道，当中权。&lt;br&gt;
-赤道下，温暖极。我中华，在东北。&lt;br&gt;
-曰江河，曰淮济。此四渎，水之纪。&lt;br&gt;
-曰岱华，嵩恒衡。此五岳，山之名。&lt;br&gt;
-曰士农，曰工商。此四民，国之良。&lt;br&gt;
-曰仁义，礼智信。此五常，不容紊。&lt;br&gt;
-地所生，有草木。此植物，遍水陆。&lt;br&gt;
-有虫鱼，有鸟兽。此动物，能飞走。&lt;br&gt;
-稻粱菽，麦黍稷。此六谷，人所食。&lt;br&gt;
-马牛羊，鸡犬豕。此六畜，人所饲。&lt;br&gt;
-曰喜怒，曰哀惧。爱恶欲，七情具。&lt;br&gt;
-青赤黄，及黑白。此五色，目所识。&lt;br&gt;
-酸苦甘，及辛咸。此五味，口所含。&lt;br&gt;
-膻焦香，及腥朽。此五臭，鼻所嗅。&lt;br&gt;
-匏土革，木石金。丝与竹，乃八音。&lt;br&gt;
-曰平上，曰去入。此四声，宜调协。&lt;br&gt;
-高曾祖，父而身。身而子，子而孙。&lt;br&gt;
-自子孙，至玄曾。乃九族，人之伦。&lt;br&gt;
-父子恩，夫妇从。兄则友，弟则恭。&lt;br&gt;
-长幼序，友与朋。君则敬，臣则忠。&lt;br&gt;
-此十义，人所同。当师叙，勿违背。&lt;br&gt;
-斩齐衰，大小功。至缌麻，五服终。&lt;br&gt;
-礼乐射，御书数。古六艺，今不具。&lt;br&gt;
-惟书学，人共遵。既识字，讲说文。&lt;br&gt;
-有古文，大小篆。隶草继，不可乱。&lt;br&gt;
-若广学，惧其繁。但略说，能知原。&lt;br&gt;
-凡训蒙，须讲究。详训诂，明句读。&lt;br&gt;
-为学者，必有初。小学终，至四书。&lt;br&gt;
-论语者，二十篇。群弟子，记善言。&lt;br&gt;
-孟子者，七篇止。讲道德，说仁义。&lt;br&gt;
-作中庸，子思笔。中不偏，庸不易。&lt;br&gt;
-作大学，乃曾子。自修齐，至平治。&lt;br&gt;
-孝经通，四书熟。如六经，始可读。&lt;br&gt;
-诗书易，礼春秋。号六经，当讲求。 &lt;br&gt;
-有连山，有归藏。有周易，三易详。&lt;br&gt;
-有典谟，有训诰。有誓命，书之奥。&lt;br&gt;
-我周公，作周礼。著六官，存治体。&lt;br&gt;
-大小戴，注礼记。述圣言，礼乐备。&lt;br&gt;
-曰国风，曰雅颂。号四诗，当讽咏。&lt;br&gt;
-诗既亡，春秋作。寓褒贬，别善恶。&lt;br&gt;
-三传者，有公羊。有左氏，有谷梁。&lt;br&gt;
-经既明，方读子。撮其要，记其事。&lt;br&gt;
-五子者，有荀扬。文中子，及老庄。&lt;br&gt;
-经子通，读诸史。考世系，知终始。&lt;br&gt;
-自羲农，至黄帝。号三皇，居上世。&lt;br&gt;
-唐有虞，号二帝。相揖逊，称盛世。&lt;br&gt;
-夏有禹，商有汤。周文王，称三王。&lt;br&gt;
-夏传子，家天下。四百载，迁夏社。&lt;br&gt;
-汤伐夏，国号商。六百载，至纣亡。&lt;br&gt;
-周文王，始诛纣。八百载，最长久。&lt;br&gt;
-周辙东，王纲坠。逞干戈，尚游说。&lt;br&gt;
-始春秋，终战国。五霸强，七雄出。&lt;br&gt;
-嬴秦氏，始兼并。传二世，楚汉争。 &lt;br&gt;
-高祖兴，汉业建。至孝平，王莽篡。&lt;br&gt;
-光武兴，为东汉。四百年，终于献。&lt;br&gt;
-魏蜀吴，争汉鼎。号三国，迄两晋。&lt;br&gt;
-宋齐继，梁陈承。为南朝，都金陵。&lt;br&gt;
-北元魏，分东西。宇文周，与高齐。&lt;br&gt;
-迨至隋，一土宇。不再传，失统绪。&lt;br&gt;
-唐高祖，起义师。除隋乱，创国基。&lt;br&gt;
-二十传，三百载。梁灭之，国乃改。&lt;br&gt;
-梁唐晋，及汉周。称五代，皆有由。&lt;br&gt;
-炎宋兴，受周禅。十八传，南北混。&lt;br&gt;
-辽与金，皆称帝。元灭金，绝宋世。&lt;br&gt;
-舆图广，超前代。九十年，国祚废。&lt;br&gt;
-太祖兴，国大明。号洪武，都金陵。&lt;br&gt;
-迨成祖，迁燕京。十六世，至崇祯。&lt;br&gt;
-权阉肆，寇如林。李闯出，神器焚。&lt;br&gt;
-清世祖，膺景命。靖四方，克大定。&lt;br&gt;
-由康雍，历乾嘉。民安富，治绩夸。&lt;br&gt;
-道咸间，变乱起。始英法，扰都鄙。&lt;br&gt;
-同光后，宣统弱。传九帝，满清殁。               &lt;br&gt;
-革命兴，废帝制。立宪法，建民国。&lt;br&gt;
-古今史，全在兹。载治乱，知兴衰。&lt;br&gt;
-史虽繁，读有次。史记一，汉书二。&lt;br&gt;
-后汉三，国志四。兼证经，参通鉴。&lt;br&gt;
-读史者，考实录。通古今，若亲目。&lt;br&gt;
-昔仲尼，师项橐。古圣贤，尚勤学。&lt;br&gt;
-赵中令，读鲁论。彼既仕，学且勤。&lt;br&gt;
-披蒲编，削竹简。彼无书，且知勉。&lt;br&gt;
-头悬梁，锥刺股。彼不教，自勤苦。&lt;br&gt;
-如囊萤，如映雪。家虽贫，学不辍。&lt;br&gt;
-如负薪，如挂角。身虽劳，犹苦卓。&lt;br&gt;
-苏老泉，二十七。始发愤，读书籍。&lt;br&gt;
-彼既老，犹悔迟。尔小生，宜早思。&lt;br&gt;
-若梁灏，八十二。对大廷，魁多士。&lt;br&gt;
-彼既成，众称异。尔小生，宜立志。&lt;br&gt;
-莹八岁，能咏诗。泌七岁，能赋棋。&lt;br&gt;
-彼颖悟，人称奇。尔幼学，当效之。&lt;br&gt;
-蔡文姬，能辨琴。谢道韫，能咏吟。&lt;br&gt;
-彼女子，且聪敏。尔男子，当自警。&lt;br&gt;
-唐刘晏，方七岁。举神童，作正字。&lt;br&gt;
-口而诵，心而惟。朝于斯，夕于斯。&lt;br&gt;
-晏虽幼，身已仕。有为者，亦若是。&lt;br&gt;
-犬守夜，鸡司晨。苟不学，曷为人。&lt;br&gt;
-蚕吐丝，蜂酿蜜。人不学，不如物。&lt;br&gt;
-幼而学，壮而行。上致君，下泽民。&lt;br&gt;
-扬名声，显父母。光于前，裕于后。&lt;br&gt;
-人遗子，金满赢。我教子，唯一经。&lt;br&gt;
-勤有功，戏无益。戒之哉，宜勉力。&lt;/p&gt;
-- https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/ - jASSSSSSON</description>
-        </item>
-    
-    
-    
-        <item>
         <title>搭建GithubPage博客(Hugo)</title>
         <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</link>
         <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
@@ -593,32 +440,154 @@ Git: 2.28.0 x64&lt;br&gt;
     
     
         <item>
-        <title>奇怪的问题</title>
-        <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
+        <title>藏句阁</title>
+        <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</link>
+        <pubDate>Mon, 10 Aug 2020 13:25:05 -0400</pubDate>
+        
+        <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/ -&lt;h2 id=&#34;三更灯火五更鸡正是男儿读书时黑发不知勤学早白首方悔读书迟&#34;&gt;三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。&lt;/h2&gt;
+&lt;p&gt;—— 颜真卿&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;发现者尤其是一个初出茅庐的年轻发现者需要勇气才能无视他人的冷漠和怀疑才能坚信自己发现的意义并把研究继续下去&#34;&gt;发现者，尤其是一个初出茅庐的年轻发现者，需要勇气才能无视他人的冷漠和怀疑，才能坚信自己发现的意义，并把研究继续下去。&lt;/h2&gt;
+&lt;p&gt;—— 贝弗里奇&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;沉浸于现实的忙碌之中没有时间和精力思念过去成功也就不会太远了&#34;&gt;沉浸于现实的忙碌之中，没有时间和精力思念过去，成功也就不会太远了。&lt;/h2&gt;
+&lt;p&gt;—— 雷音&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;学习知识要善于思考思考再思我就是靠这个方法成为科学家的&#34;&gt;学习知识要善于思考，思考，再思。我就是靠这个方法成为科学家的。&lt;/h2&gt;
+&lt;p&gt;—— 爱因斯坦&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
+- https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/ - jASSSSSSON</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>三字经</title>
+        <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</link>
         <pubDate>Mon, 10 Aug 2020 11:25:05 -0400</pubDate>
         
-        <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ -&lt;h1 id=&#34;开始&#34;&gt;开始&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1假如你穿越回到了过去抛开电影里的设定你确实遇到了自己那么怎样才能鉴别谁是过去的自己谁是现在的自己呢&#34;&gt;&lt;code&gt;1.&lt;/code&gt;假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2假如造出了预知未来的机器人们靠着这台机器可以避免所有灾害那么一旦采取措施未来就会立刻改变如果出现两台机器他们的预测结果会不会出现差异&#34;&gt;&lt;code&gt;2.&lt;/code&gt;假如造出了预知未来的机器，人们靠着这台机器可以避免所有灾害。那么，一旦采取措施，未来就会立刻改变。如果出现两台机器，他们的预测结果会不会出现差异？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[比如，假定未来是以图像形式展示的，我使用其中一台设备观察一段时间后的另一台，然后做出改变未来的动作]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;3如果祖父悖论不存在是否可以证明时间也不存在&#34;&gt;&lt;code&gt;3.&lt;/code&gt;如果祖父悖论不存在，是否可以证明时间也不存在？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[如果杀死祖父的那一刻，&#39;我&#39;会直接消失]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;4如果进行了时间穿越旅行那会不会只是推动了全体时间&#34;&gt;&lt;code&gt;4.&lt;/code&gt;如果进行了时间穿越旅行，那会不会只是推动了全体时间&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[比如你会因为向前旅行三年而减少三岁]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;5假设宇宙是有边界的那它的边缘到底会是什么性质呢&#34;&gt;&lt;code&gt;5.&lt;/code&gt;假设宇宙是有边界的，那它的边缘到底会是什么性质呢？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[会不会从这里出去，从中心对称的另一边出来]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&amp;hellip;&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;结尾&#34;&gt;结尾&lt;/h1&gt;
-- https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ - jASSSSSSON</description>
+        <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/ -&lt;h2 id=&#34;人之初性本善性相近习相远&#34;&gt;人之初，性本善。性相近，习相远。&lt;/h2&gt;
+&lt;p&gt;苟不教，性乃迁。教之道，贵以专。&lt;br&gt;
+昔孟母，择邻处。子不学，断机杼。&lt;br&gt;
+窦燕山，有义方。教五子，名俱扬。&lt;br&gt;
+养不教，父之过。教不严，师之惰。&lt;br&gt;
+子不学，非所宜。幼不学，老何为。&lt;br&gt;
+玉不琢，不成器。人不学，不知义。&lt;br&gt;
+为人子，方少时。亲师友，习礼仪。&lt;br&gt;
+香九龄，能温席。孝于亲，所当执。&lt;br&gt;
+融四岁，能让梨。弟于长，宜先知。&lt;br&gt;
+首孝悌，次见闻。知某数，识某文。&lt;br&gt;
+一而十，十而百。百而千，千而万。&lt;br&gt;
+三才者，天地人。三光者，日月星。&lt;br&gt;
+三纲者，君臣义。父子亲，夫妇顺。&lt;br&gt;
+曰春夏，曰秋冬。此四时，运不穷。&lt;br&gt;
+曰南北，曰西东。此四方，应乎中。&lt;br&gt;
+曰水火，木金土。此五行，本乎数。&lt;br&gt;
+十干者，甲至癸。十二支，子至亥。&lt;br&gt;
+曰黄道，日所躔。曰赤道，当中权。&lt;br&gt;
+赤道下，温暖极。我中华，在东北。&lt;br&gt;
+曰江河，曰淮济。此四渎，水之纪。&lt;br&gt;
+曰岱华，嵩恒衡。此五岳，山之名。&lt;br&gt;
+曰士农，曰工商。此四民，国之良。&lt;br&gt;
+曰仁义，礼智信。此五常，不容紊。&lt;br&gt;
+地所生，有草木。此植物，遍水陆。&lt;br&gt;
+有虫鱼，有鸟兽。此动物，能飞走。&lt;br&gt;
+稻粱菽，麦黍稷。此六谷，人所食。&lt;br&gt;
+马牛羊，鸡犬豕。此六畜，人所饲。&lt;br&gt;
+曰喜怒，曰哀惧。爱恶欲，七情具。&lt;br&gt;
+青赤黄，及黑白。此五色，目所识。&lt;br&gt;
+酸苦甘，及辛咸。此五味，口所含。&lt;br&gt;
+膻焦香，及腥朽。此五臭，鼻所嗅。&lt;br&gt;
+匏土革，木石金。丝与竹，乃八音。&lt;br&gt;
+曰平上，曰去入。此四声，宜调协。&lt;br&gt;
+高曾祖，父而身。身而子，子而孙。&lt;br&gt;
+自子孙，至玄曾。乃九族，人之伦。&lt;br&gt;
+父子恩，夫妇从。兄则友，弟则恭。&lt;br&gt;
+长幼序，友与朋。君则敬，臣则忠。&lt;br&gt;
+此十义，人所同。当师叙，勿违背。&lt;br&gt;
+斩齐衰，大小功。至缌麻，五服终。&lt;br&gt;
+礼乐射，御书数。古六艺，今不具。&lt;br&gt;
+惟书学，人共遵。既识字，讲说文。&lt;br&gt;
+有古文，大小篆。隶草继，不可乱。&lt;br&gt;
+若广学，惧其繁。但略说，能知原。&lt;br&gt;
+凡训蒙，须讲究。详训诂，明句读。&lt;br&gt;
+为学者，必有初。小学终，至四书。&lt;br&gt;
+论语者，二十篇。群弟子，记善言。&lt;br&gt;
+孟子者，七篇止。讲道德，说仁义。&lt;br&gt;
+作中庸，子思笔。中不偏，庸不易。&lt;br&gt;
+作大学，乃曾子。自修齐，至平治。&lt;br&gt;
+孝经通，四书熟。如六经，始可读。&lt;br&gt;
+诗书易，礼春秋。号六经，当讲求。 &lt;br&gt;
+有连山，有归藏。有周易，三易详。&lt;br&gt;
+有典谟，有训诰。有誓命，书之奥。&lt;br&gt;
+我周公，作周礼。著六官，存治体。&lt;br&gt;
+大小戴，注礼记。述圣言，礼乐备。&lt;br&gt;
+曰国风，曰雅颂。号四诗，当讽咏。&lt;br&gt;
+诗既亡，春秋作。寓褒贬，别善恶。&lt;br&gt;
+三传者，有公羊。有左氏，有谷梁。&lt;br&gt;
+经既明，方读子。撮其要，记其事。&lt;br&gt;
+五子者，有荀扬。文中子，及老庄。&lt;br&gt;
+经子通，读诸史。考世系，知终始。&lt;br&gt;
+自羲农，至黄帝。号三皇，居上世。&lt;br&gt;
+唐有虞，号二帝。相揖逊，称盛世。&lt;br&gt;
+夏有禹，商有汤。周文王，称三王。&lt;br&gt;
+夏传子，家天下。四百载，迁夏社。&lt;br&gt;
+汤伐夏，国号商。六百载，至纣亡。&lt;br&gt;
+周文王，始诛纣。八百载，最长久。&lt;br&gt;
+周辙东，王纲坠。逞干戈，尚游说。&lt;br&gt;
+始春秋，终战国。五霸强，七雄出。&lt;br&gt;
+嬴秦氏，始兼并。传二世，楚汉争。 &lt;br&gt;
+高祖兴，汉业建。至孝平，王莽篡。&lt;br&gt;
+光武兴，为东汉。四百年，终于献。&lt;br&gt;
+魏蜀吴，争汉鼎。号三国，迄两晋。&lt;br&gt;
+宋齐继，梁陈承。为南朝，都金陵。&lt;br&gt;
+北元魏，分东西。宇文周，与高齐。&lt;br&gt;
+迨至隋，一土宇。不再传，失统绪。&lt;br&gt;
+唐高祖，起义师。除隋乱，创国基。&lt;br&gt;
+二十传，三百载。梁灭之，国乃改。&lt;br&gt;
+梁唐晋，及汉周。称五代，皆有由。&lt;br&gt;
+炎宋兴，受周禅。十八传，南北混。&lt;br&gt;
+辽与金，皆称帝。元灭金，绝宋世。&lt;br&gt;
+舆图广，超前代。九十年，国祚废。&lt;br&gt;
+太祖兴，国大明。号洪武，都金陵。&lt;br&gt;
+迨成祖，迁燕京。十六世，至崇祯。&lt;br&gt;
+权阉肆，寇如林。李闯出，神器焚。&lt;br&gt;
+清世祖，膺景命。靖四方，克大定。&lt;br&gt;
+由康雍，历乾嘉。民安富，治绩夸。&lt;br&gt;
+道咸间，变乱起。始英法，扰都鄙。&lt;br&gt;
+同光后，宣统弱。传九帝，满清殁。               &lt;br&gt;
+革命兴，废帝制。立宪法，建民国。&lt;br&gt;
+古今史，全在兹。载治乱，知兴衰。&lt;br&gt;
+史虽繁，读有次。史记一，汉书二。&lt;br&gt;
+后汉三，国志四。兼证经，参通鉴。&lt;br&gt;
+读史者，考实录。通古今，若亲目。&lt;br&gt;
+昔仲尼，师项橐。古圣贤，尚勤学。&lt;br&gt;
+赵中令，读鲁论。彼既仕，学且勤。&lt;br&gt;
+披蒲编，削竹简。彼无书，且知勉。&lt;br&gt;
+头悬梁，锥刺股。彼不教，自勤苦。&lt;br&gt;
+如囊萤，如映雪。家虽贫，学不辍。&lt;br&gt;
+如负薪，如挂角。身虽劳，犹苦卓。&lt;br&gt;
+苏老泉，二十七。始发愤，读书籍。&lt;br&gt;
+彼既老，犹悔迟。尔小生，宜早思。&lt;br&gt;
+若梁灏，八十二。对大廷，魁多士。&lt;br&gt;
+彼既成，众称异。尔小生，宜立志。&lt;br&gt;
+莹八岁，能咏诗。泌七岁，能赋棋。&lt;br&gt;
+彼颖悟，人称奇。尔幼学，当效之。&lt;br&gt;
+蔡文姬，能辨琴。谢道韫，能咏吟。&lt;br&gt;
+彼女子，且聪敏。尔男子，当自警。&lt;br&gt;
+唐刘晏，方七岁。举神童，作正字。&lt;br&gt;
+口而诵，心而惟。朝于斯，夕于斯。&lt;br&gt;
+晏虽幼，身已仕。有为者，亦若是。&lt;br&gt;
+犬守夜，鸡司晨。苟不学，曷为人。&lt;br&gt;
+蚕吐丝，蜂酿蜜。人不学，不如物。&lt;br&gt;
+幼而学，壮而行。上致君，下泽民。&lt;br&gt;
+扬名声，显父母。光于前，裕于后。&lt;br&gt;
+人遗子，金满赢。我教子，唯一经。&lt;br&gt;
+勤有功，戏无益。戒之哉，宜勉力。&lt;/p&gt;
+- https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/ - jASSSSSSON</description>
         </item>
     
     
@@ -703,7 +672,7 @@ Maven:3&lt;/p&gt;
         <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
         
         <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/ -&lt;h2 id=&#34;1解析jsp需要在maven中添加依赖&#34;&gt;&lt;code&gt;1.&lt;/code&gt;解析jsp需要在maven中添加依赖&lt;/h2&gt;
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/ -&lt;h2 id=&#34;1解析jsp需要在maven中添加依赖&#34;&gt;&lt;code&gt;1.&lt;/code&gt;解析&lt;code&gt;.jsp&lt;/code&gt;需要在maven中添加依赖&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
             &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;javax.servlet&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
             &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;jstl&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
@@ -714,7 +683,7 @@ Maven:3&lt;/p&gt;
             &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;provided&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;2解析html需要在maven中添加依赖&#34;&gt;&lt;code&gt;2.&lt;/code&gt;解析html需要在maven中添加依赖&lt;/h2&gt;
+&lt;h2 id=&#34;2解析html需要在maven中添加依赖&#34;&gt;&lt;code&gt;2.&lt;/code&gt;解析&lt;code&gt;.html&lt;/code&gt;需要在maven中添加依赖&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.boot&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-boot-starter-thymeleaf&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
@@ -879,6 +848,37 @@ kicked to restore order; an admirable tradition which the provostship has
 bequeathed to the constablery, the constablery to the _maréchaussée_,
 the _maréchaussée_ to our _gendarmeri_ of Paris.&lt;/p&gt;
 - https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/ - jASSSSSSON</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>奇怪的问题</title>
+        <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
+        <pubDate>Mon, 24 Aug 1998 11:25:05 -0400</pubDate>
+        
+        <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ -&lt;h1 id=&#34;开始&#34;&gt;开始&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1假如你穿越回到了过去抛开电影里的设定你确实遇到了自己那么怎样才能鉴别谁是过去的自己谁是现在的自己呢&#34;&gt;&lt;code&gt;1.&lt;/code&gt;假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;[忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2假如造出了预知未来的机器人们靠着这台机器可以避免所有灾害那么一旦采取措施未来就会立刻改变如果出现两台机器他们的预测结果会不会出现差异&#34;&gt;&lt;code&gt;2.&lt;/code&gt;假如造出了预知未来的机器，人们靠着这台机器可以避免所有灾害。那么，一旦采取措施，未来就会立刻改变。如果出现两台机器，他们的预测结果会不会出现差异？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;[比如，假定未来是以图像形式展示的，我使用其中一台设备观察一段时间后的另一台，然后做出改变未来的动作]&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3如果祖父悖论不存在是否可以证明时间也不存在&#34;&gt;&lt;code&gt;3.&lt;/code&gt;如果祖父悖论不存在，是否可以证明时间也不存在？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;[如果杀死祖父的那一刻，&#39;我&#39;会直接消失]&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4如果进行了时间穿越旅行那会不会只是推动了全体时间&#34;&gt;&lt;code&gt;4.&lt;/code&gt;如果进行了时间穿越旅行，那会不会只是推动了全体时间&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;[比如你会因为向前旅行三年而减少三岁]&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;5假设宇宙是有边界的那它的边缘到底会是什么性质呢&#34;&gt;&lt;code&gt;5.&lt;/code&gt;假设宇宙是有边界的，那它的边缘到底会是什么性质呢？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;[会不会从这里出去，从中心对称的另一边出来]&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&amp;hellip;&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;结尾&#34;&gt;结尾&lt;/h1&gt;
+- https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ - jASSSSSSON</description>
         </item>
     
     

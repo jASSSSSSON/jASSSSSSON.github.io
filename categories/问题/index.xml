@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Mon, 10 Aug 2020 11:25:05 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 18:37:05 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/categories/%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>:(</title>
+      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</link>
+      <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
+      <description>1.解析.jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析.html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
+    </item>
+    
+    <item>
       <title>奇怪的问题</title>
       <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
-      <pubDate>Mon, 10 Aug 2020 11:25:05 -0400</pubDate>
+      <pubDate>Mon, 24 Aug 1998 11:25:05 -0400</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
       <description>开始  1.假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？ [忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]
@@ -24,15 +33,6 @@
  4.如果进行了时间穿越旅行，那会不会只是推动了全体时间 [比如你会因为向前旅行三年而减少三岁]
  5.假设宇宙是有边界的，那它的边缘到底会是什么性质呢？ [会不会从这里出去，从中心对称的另一边出来]
  &amp;hellip;  结尾 </description>
-    </item>
-    
-    <item>
-      <title>:(</title>
-      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</link>
-      <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
-      
-      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
-      <description>1.解析jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
     </item>
     
   </channel>

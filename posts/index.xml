@@ -33,9 +33,63 @@ Vue:2.6.11
     </item>
     
     <item>
+      <title>搭建GithubPage博客(Hugo)</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</link>
+      <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
+      <description>背景信息  使用Hugo初始化静态页面，Diary主题模板，这款主题带有Gitalk功能模块，统一在cofig.toml内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+博客搭建
+细节
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Git: 2.28.0 x64
+静态博客生成工具：Hugo-0.74.3
+主题：Diary-1.2.0
+ 博客搭建   注册  首先，既然是利用GithubPage，所以需要一个Github账户，如果没有，请先注册一个，点击下方传送门可以直接跳转，已经注册过就可以跳过这步了。
+需要注意的是，第一次打开页面，这就是注册，按要求输入信息即可，Username不可重复，后续是URL中的标识，重名了就改一个吧！:)
+Github.com   下载  账号准备就绪了后，就需要下载Git客户端以及Hugo了，附上传送门。
+注意 : 选择自己的版本和对应x86/x64版本(x86是32位/bit，x64是64位/bit)，不要下载其他操作系统的文件！
+Git Git(win)
+Hugo(版本很多，windows的在下方)   安装配置  Git
+全部都下载好后，进行安装与配置，这里转载一下其他博主的文章，大家看看，只需要配置Git能够使用即可。 转载：Git下载、安装与环境配置 Hugo  将下载的文件解压，得到hugo.exe文件，然后如上一篇博文一样，将文件放到自己想要的位置后，添加环境变量path为文件所在目录即可(如D://software)。
+验证Hugo是否安装成功：[hugo version] 接下来新建一个文件夹，用来装静态网页，使用[hugo new site 自定义站点名称]，需要在文件夹内使用CMD命令，可以在文件夹地址栏输入[cmd]打开CMD再使用新建命令。 新建完成后，应该会产生如下图所示结构 ├─archetypes├─content├─data├─layouts├─static├─themes└─config.toml这个时候就需要挑选一款自己喜欢的主题了，传送门 ： Hugo主题
+挑选主题多注意主题作者的文档，里面记录了如何配置主题参数。
+ 将主题下载到本地后，移动到站点下的themes文件夹，并将里面的config.toml移动出来覆盖外面的配置文件，接下来，在站点文件夹下使用CMD命令hugo server开启本地测试，调试参数，直到满意，访问地址为http://localhost:1313(注意主题文档，有一部分需要配置config.toml文件才能正常使用) 如果测试无误，进入下一个环节。      部署准备  进入Github主页，新建一个仓库，仓库名为：[你的用户名].</description>
+    </item>
+    
+    <item>
+      <title>搭建博客中遇到的问题(Gitalk）</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</link>
+      <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
+      <description>问题描述  在使用Hugo初始化静态页面时，使用了Diary主题，这款主题带有Gitalk功能模块，需要在cofig.toml内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误[Error: Network Error] (问题解决方案可点击跳到相应部分)，后来又出现 [Error: Not Found] 是本次问题关注点，如需跳转，请点击下方快速跳转
+问题描述
+环境介绍
+博客搭建
+解决方案
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Git: 2.28.0 x64
+静态博客生成工具：Hugo-0.74.3
+ 博客搭建  详见我的另一篇文章搭建GithubPage博客(Hugo)
+ 解决方案   Error: Network Error  首先，提示词已经非常清晰了，所以请检查配置文件config,toml内的[baseURL]设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示[Error: Network Error],所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用CTRL+F5强制刷新，避免缓存影响测试。
+注意 : 如果是用GitPage的博客地址，[https://XXX.github.io]后什么都不要加，还有属性要用&amp;quot;&amp;quot;包裹，我改的时候有一次就把前面的&amp;quot;给删掉了。:(
+  Error: Not Found  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件config.toml内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;[你的仓库名称]&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)
+我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了[Error: Network Error]，但很快就解决了，接下来这个[Error: Not Found]可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：[repo]=&amp;quot;填写自己的仓库&amp;quot;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)
+但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址https://jasssssson.github.io。一开始加上了[.git]尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是[Error: Network Error]，后面改好后测试有些时候切换了浏览器，一会又是[Error: Not Found]，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉[.git]的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。:)
+   代码  config.toml baseURL = &amp;#34;https://xxx.github.io&amp;#34; DefaultContentLanguage = &amp;#34;zh&amp;#34; # Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;xxx&amp;#39;s Blog&amp;#34; copyright = &amp;#34;xxx&amp;#34; theme = &amp;#34;diary&amp;#34; [markup] [markup.</description>
+    </item>
+    
+    <item>
       <title>藏句阁</title>
       <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</link>
-      <pubDate>Tue, 11 Aug 2020 13:25:05 -0400</pubDate>
+      <pubDate>Mon, 10 Aug 2020 13:25:05 -0400</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</guid>
       <description>三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。 —— 颜真卿
@@ -48,7 +102,7 @@ Vue:2.6.11
     <item>
       <title>三字经</title>
       <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</link>
-      <pubDate>Tue, 11 Aug 2020 11:25:05 -0400</pubDate>
+      <pubDate>Mon, 10 Aug 2020 11:25:05 -0400</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</guid>
       <description>人之初，性本善。性相近，习相远。 苟不教，性乃迁。教之道，贵以专。
@@ -122,74 +176,6 @@ Vue:2.6.11
     </item>
     
     <item>
-      <title>搭建GithubPage博客(Hugo)</title>
-      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</link>
-      <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
-      
-      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
-      <description>背景信息  使用Hugo初始化静态页面，Diary主题模板，这款主题带有Gitalk功能模块，统一在cofig.toml内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转
-背景信息
-环境介绍
-博客搭建
-细节
-代码
-结语
- 环境介绍 操作系统：Windows10
-Git: 2.28.0 x64
-静态博客生成工具：Hugo-0.74.3
-主题：Diary-1.2.0
- 博客搭建   注册  首先，既然是利用GithubPage，所以需要一个Github账户，如果没有，请先注册一个，点击下方传送门可以直接跳转，已经注册过就可以跳过这步了。
-需要注意的是，第一次打开页面，这就是注册，按要求输入信息即可，Username不可重复，后续是URL中的标识，重名了就改一个吧！:)
-Github.com   下载  账号准备就绪了后，就需要下载Git客户端以及Hugo了，附上传送门。
-注意 : 选择自己的版本和对应x86/x64版本(x86是32位/bit，x64是64位/bit)，不要下载其他操作系统的文件！
-Git Git(win)
-Hugo(版本很多，windows的在下方)   安装配置  Git
-全部都下载好后，进行安装与配置，这里转载一下其他博主的文章，大家看看，只需要配置Git能够使用即可。 转载：Git下载、安装与环境配置 Hugo  将下载的文件解压，得到hugo.exe文件，然后如上一篇博文一样，将文件放到自己想要的位置后，添加环境变量path为文件所在目录即可(如D://software)。
-验证Hugo是否安装成功：[hugo version] 接下来新建一个文件夹，用来装静态网页，使用[hugo new site 自定义站点名称]，需要在文件夹内使用CMD命令，可以在文件夹地址栏输入[cmd]打开CMD再使用新建命令。 新建完成后，应该会产生如下图所示结构 ├─archetypes├─content├─data├─layouts├─static├─themes└─config.toml这个时候就需要挑选一款自己喜欢的主题了，传送门 ： Hugo主题
-挑选主题多注意主题作者的文档，里面记录了如何配置主题参数。
- 将主题下载到本地后，移动到站点下的themes文件夹，并将里面的config.toml移动出来覆盖外面的配置文件，接下来，在站点文件夹下使用CMD命令hugo server开启本地测试，调试参数，直到满意，访问地址为http://localhost:1313(注意主题文档，有一部分需要配置config.toml文件才能正常使用) 如果测试无误，进入下一个环节。      部署准备  进入Github主页，新建一个仓库，仓库名为：[你的用户名].</description>
-    </item>
-    
-    <item>
-      <title>搭建博客中遇到的问题(Gitalk）</title>
-      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</link>
-      <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
-      
-      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
-      <description>问题描述  在使用Hugo初始化静态页面时，使用了Diary主题，这款主题带有Gitalk功能模块，需要在cofig.toml内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误[Error: Network Error] (问题解决方案可点击跳到相应部分)，后来又出现 [Error: Not Found] 是本次问题关注点，如需跳转，请点击下方快速跳转
-问题描述
-环境介绍
-博客搭建
-解决方案
-代码
-结语
- 环境介绍 操作系统：Windows10
-Git: 2.28.0 x64
-静态博客生成工具：Hugo-0.74.3
- 博客搭建  详见我的另一篇文章搭建GithubPage博客(Hugo)
- 解决方案   Error: Network Error  首先，提示词已经非常清晰了，所以请检查配置文件config,toml内的[baseURL]设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示[Error: Network Error],所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用CTRL+F5强制刷新，避免缓存影响测试。
-注意 : 如果是用GitPage的博客地址，[https://XXX.github.io]后什么都不要加，还有属性要用&amp;quot;&amp;quot;包裹，我改的时候有一次就把前面的&amp;quot;给删掉了。:(
-  Error: Not Found  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件config.toml内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;[你的仓库名称]&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)
-我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了[Error: Network Error]，但很快就解决了，接下来这个[Error: Not Found]可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：[repo]=&amp;quot;填写自己的仓库&amp;quot;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)
-但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址https://jasssssson.github.io。一开始加上了[.git]尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是[Error: Network Error]，后面改好后测试有些时候切换了浏览器，一会又是[Error: Not Found]，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉[.git]的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。:)
-   代码  config.toml baseURL = &amp;#34;https://xxx.github.io&amp;#34; DefaultContentLanguage = &amp;#34;zh&amp;#34; # Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;xxx&amp;#39;s Blog&amp;#34; copyright = &amp;#34;xxx&amp;#34; theme = &amp;#34;diary&amp;#34; [markup] [markup.</description>
-    </item>
-    
-    <item>
-      <title>奇怪的问题</title>
-      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
-      <pubDate>Mon, 10 Aug 2020 11:25:05 -0400</pubDate>
-      
-      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
-      <description>开始  1.假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？ [忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]
- 2.假如造出了预知未来的机器，人们靠着这台机器可以避免所有灾害。那么，一旦采取措施，未来就会立刻改变。如果出现两台机器，他们的预测结果会不会出现差异？ [比如，假定未来是以图像形式展示的，我使用其中一台设备观察一段时间后的另一台，然后做出改变未来的动作]
- 3.如果祖父悖论不存在，是否可以证明时间也不存在？ [如果杀死祖父的那一刻，&#39;我&#39;会直接消失]
- 4.如果进行了时间穿越旅行，那会不会只是推动了全体时间 [比如你会因为向前旅行三年而减少三岁]
- 5.假设宇宙是有边界的，那它的边缘到底会是什么性质呢？ [会不会从这里出去，从中心对称的另一边出来]
- &amp;hellip;  结尾 </description>
-    </item>
-    
-    <item>
       <title>简单配置Springboot（Idea）</title>
       <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</link>
       <pubDate>Mon, 10 Aug 2020 13:51:30 +0800</pubDate>
@@ -219,7 +205,7 @@ Maven:3
       <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
-      <description>1.解析jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
+      <description>1.解析.jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析.html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
     </item>
     
     <item>
@@ -239,6 +225,20 @@ Maven:3
       <guid>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/</guid>
       <description>Three hundred and forty-eight years, six months, and nineteen days ago to-day, the Parisians awoke to the sound of all the bells in the triple circuit of the city, the university, and the town ringing a full peal.
 The sixth of January, 1482, is not, however, a day of which history has preserved the memory. There was nothing notable in the event which thus set the bells and the bourgeois of Paris in a ferment from early morning.</description>
+    </item>
+    
+    <item>
+      <title>奇怪的问题</title>
+      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
+      <pubDate>Mon, 24 Aug 1998 11:25:05 -0400</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
+      <description>开始  1.假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？ [忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]
+ 2.假如造出了预知未来的机器，人们靠着这台机器可以避免所有灾害。那么，一旦采取措施，未来就会立刻改变。如果出现两台机器，他们的预测结果会不会出现差异？ [比如，假定未来是以图像形式展示的，我使用其中一台设备观察一段时间后的另一台，然后做出改变未来的动作]
+ 3.如果祖父悖论不存在，是否可以证明时间也不存在？ [如果杀死祖父的那一刻，&#39;我&#39;会直接消失]
+ 4.如果进行了时间穿越旅行，那会不会只是推动了全体时间 [比如你会因为向前旅行三年而减少三岁]
+ 5.假设宇宙是有边界的，那它的边缘到底会是什么性质呢？ [会不会从这里出去，从中心对称的另一边出来]
+ &amp;hellip;  结尾 </description>
     </item>
     
   </channel>
