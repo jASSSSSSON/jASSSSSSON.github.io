@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 18:37:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 18:37:05 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/tags/%E5%8F%82%E6%95%B0%E5%B0%8F%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title>:(</title>
       <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</link>
-      <pubDate>Sat, 15 Aug 2020 18:37:05 +0800</pubDate>
+      <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
-      <description>1.解析jsp需要在maven依赖中添加 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
+      <description>1.解析jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
     </item>
     
   </channel>

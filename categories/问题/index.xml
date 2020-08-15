@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 18:37:05 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 11:25:05 -0400</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/categories/%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>:(</title>
-      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</link>
-      <pubDate>Sat, 15 Aug 2020 18:37:05 +0800</pubDate>
-      
-      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
-      <description>1.解析jsp需要在maven依赖中添加 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
-    </item>
     
     <item>
       <title>奇怪的问题</title>
@@ -33,6 +24,15 @@
  4.如果进行了时间穿越旅行，那会不会只是推动了全体时间 [比如你会因为向前旅行三年而减少三岁]
  5.假设宇宙是有边界的，那它的边缘到底会是什么性质呢？ [会不会从这里出去，从中心对称的另一边出来]
  &amp;hellip;  结尾 </description>
+    </item>
+    
+    <item>
+      <title>:(</title>
+      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</link>
+      <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
+      <description>1.解析jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
     </item>
     
   </channel>
