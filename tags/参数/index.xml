@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Tue, 11 Aug 2020 18:07:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 17:46:30 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/tags/%E5%8F%82%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>简单配置Vue.js（Idea）</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/vuebuilding/</link>
+      <pubDate>Sat, 15 Aug 2020 17:46:30 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/vuebuilding/</guid>
+      <description>背景信息  使用Idea搭建项目，Spring Initializr生成项目结构，前端使用Vue.js框架，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+项目搭建
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Idea:2020.1-x64
+Maven:3
+Vue:2.6.11
+ 项目搭建   打开Idea,新建Springboot项目，项目名为VueDemo   下载最新稳定版的Vue.js   新建.html文件，使用Vue.js语法操作数据  将下载好的Vue.js放到[resource]目录下的[static]里，在[templates]文件夹下创建vueIndex.html文件，然后在&amp;lt;script src=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;中将文件加载进来。
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;#34;js/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; window.onload = function(){ // vue.js的代码开始于一个Vue对象。所以每次操作数据都要声明Vue对象开始。  var vm = new Vue({ el:&amp;#39;#app&amp;#39;, // 设置当前vue对象要控制的标签范围。  data:{ // data是将要展示到HTML标签元素中的数据。  message: &amp;#39;hello world!&amp;#39;, htmlText: &amp;#39;&amp;lt;a href=&amp;#34;www.baidu.com&amp;#34;&amp;gt;baidu&amp;lt;/a&amp;gt;&amp;#39;, } }); } &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;!</description>
+    </item>
     
     <item>
       <title>搭建GithubPage博客(Hugo)</title>
@@ -63,7 +83,7 @@ Git: 2.28.0 x64
   Error: Not Found  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件config.toml内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;[你的仓库名称]&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)
 我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了[Error: Network Error]，但很快就解决了，接下来这个[Error: Not Found]可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：[repo]=&amp;quot;填写自己的仓库&amp;quot;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)
 但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址https://jasssssson.github.io。一开始加上了[.git]尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是[Error: Network Error]，后面改好后测试有些时候切换了浏览器，一会又是[Error: Not Found]，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉[.git]的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。:)
-   代码  config.toml  baseURL = &amp;#34;https://xxx.github.io&amp;#34; DefaultContentLanguage = &amp;#34;zh&amp;#34; # Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;xxx&amp;#39;s Blog&amp;#34; copyright = &amp;#34;xxx&amp;#34; theme = &amp;#34;diary&amp;#34; [markup] [markup.</description>
+   代码  config.toml baseURL = &amp;#34;https://xxx.github.io&amp;#34; DefaultContentLanguage = &amp;#34;zh&amp;#34; # Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;xxx&amp;#39;s Blog&amp;#34; copyright = &amp;#34;xxx&amp;#34; theme = &amp;#34;diary&amp;#34; [markup] [markup.</description>
     </item>
     
     <item>
@@ -79,7 +99,8 @@ Git: 2.28.0 x64
 代码
 结语
  环境介绍 操作系统：Windows10
-Idea:2020.1-x64 Maven:3
+Idea:2020.1-x64
+Maven:3
  项目搭建   打开Idea  点击新建项目
   设置参数 注意勾选依赖
   项目初始化  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如

@@ -7,92 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Tue, 11 Aug 2020 18:07:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 18:37:05 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>搭建GithubPage博客(Hugo)</title>
-      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</link>
-      <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
+      <title></title>
+      <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</link>
+      <pubDate>Sat, 15 Aug 2020 18:37:05 +0800</pubDate>
       
-      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
-      <description>背景信息  使用Hugo初始化静态页面，Diary主题模板，这款主题带有Gitalk功能模块，统一在cofig.toml内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转
-背景信息
-环境介绍
-博客搭建
-细节
-代码
-结语
- 环境介绍 操作系统：Windows10
-Git: 2.28.0 x64
-静态博客生成工具：Hugo-0.74.3
-主题：Diary-1.2.0
- 博客搭建   注册  首先，既然是利用GithubPage，所以需要一个Github账户，如果没有，请先注册一个，点击下方传送门可以直接跳转，已经注册过就可以跳过这步了。
-需要注意的是，第一次打开页面，这就是注册，按要求输入信息即可，Username不可重复，后续是URL中的标识，重名了就改一个吧！:)
-Github.com   下载  账号准备就绪了后，就需要下载Git客户端以及Hugo了，附上传送门。
-注意 : 选择自己的版本和对应x86/x64版本(x86是32位/bit，x64是64位/bit)，不要下载其他操作系统的文件！
-Git Git(win)
-Hugo(版本很多，windows的在下方)   安装配置  Git
-全部都下载好后，进行安装与配置，这里转载一下其他博主的文章，大家看看，只需要配置Git能够使用即可。 转载：Git下载、安装与环境配置 Hugo  将下载的文件解压，得到hugo.exe文件，然后如上一篇博文一样，将文件放到自己想要的位置后，添加环境变量path为文件所在目录即可(如D://software)。
-验证Hugo是否安装成功：[hugo version] 接下来新建一个文件夹，用来装静态网页，使用[hugo new site 自定义站点名称]，需要在文件夹内使用CMD命令，可以在文件夹地址栏输入[cmd]打开CMD再使用新建命令。 新建完成后，应该会产生如下图所示结构 ├─archetypes├─content├─data├─layouts├─static├─themes└─config.toml这个时候就需要挑选一款自己喜欢的主题了，传送门 ： Hugo主题
-挑选主题多注意主题作者的文档，里面记录了如何配置主题参数。
- 将主题下载到本地后，移动到站点下的themes文件夹，并将里面的config.toml移动出来覆盖外面的配置文件，接下来，在站点文件夹下使用CMD命令hugo server开启本地测试，调试参数，直到满意，访问地址为http://localhost:1313(注意主题文档，有一部分需要配置config.toml文件才能正常使用) 如果测试无误，进入下一个环节。      部署准备  进入Github主页，新建一个仓库，仓库名为：[你的用户名].</description>
+      <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
+      <description>1.解析jsp需要在maven依赖中添加 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
     </item>
     
     <item>
-      <title>搭建博客中遇到的问题(Gitalk）</title>
-      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</link>
-      <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
+      <title>简单配置Vue.js（Idea）</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/vuebuilding/</link>
+      <pubDate>Sat, 15 Aug 2020 17:46:30 +0800</pubDate>
       
-      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
-      <description>问题描述  在使用Hugo初始化静态页面时，使用了Diary主题，这款主题带有Gitalk功能模块，需要在cofig.toml内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误[Error: Network Error] (问题解决方案可点击跳到相应部分)，后来又出现 [Error: Not Found] 是本次问题关注点，如需跳转，请点击下方快速跳转
-问题描述
-环境介绍
-博客搭建
-解决方案
-代码
-结语
- 环境介绍 操作系统：Windows10
-Git: 2.28.0 x64
-静态博客生成工具：Hugo-0.74.3
- 博客搭建  详见我的另一篇文章搭建GithubPage博客(Hugo)
- 解决方案   Error: Network Error  首先，提示词已经非常清晰了，所以请检查配置文件config,toml内的[baseURL]设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示[Error: Network Error],所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用CTRL+F5强制刷新，避免缓存影响测试。
-注意 : 如果是用GitPage的博客地址，[https://XXX.github.io]后什么都不要加，还有属性要用&amp;quot;&amp;quot;包裹，我改的时候有一次就把前面的&amp;quot;给删掉了。:(
-  Error: Not Found  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件config.toml内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;[你的仓库名称]&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)
-我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了[Error: Network Error]，但很快就解决了，接下来这个[Error: Not Found]可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：[repo]=&amp;quot;填写自己的仓库&amp;quot;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)
-但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址https://jasssssson.github.io。一开始加上了[.git]尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是[Error: Network Error]，后面改好后测试有些时候切换了浏览器，一会又是[Error: Not Found]，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉[.git]的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。:)
-   代码  config.toml  baseURL = &amp;#34;https://xxx.github.io&amp;#34; DefaultContentLanguage = &amp;#34;zh&amp;#34; # Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;xxx&amp;#39;s Blog&amp;#34; copyright = &amp;#34;xxx&amp;#34; theme = &amp;#34;diary&amp;#34; [markup] [markup.</description>
-    </item>
-    
-    <item>
-      <title>简单配置Springboot（Idea）</title>
-      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</link>
-      <pubDate>Mon, 10 Aug 2020 13:51:30 +0800</pubDate>
-      
-      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</guid>
-      <description>背景信息 使用Idea搭建项目，Spring Initializr生成项目结构，下面是快速跳转入口，如有需要，请点击进行快速跳转
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/vuebuilding/</guid>
+      <description>背景信息  使用Idea搭建项目，Spring Initializr生成项目结构，前端使用Vue.js框架，下面是快速跳转入口，如有需要，请点击进行快速跳转
 背景信息
 环境介绍
 项目搭建
 代码
 结语
  环境介绍 操作系统：Windows10
-Idea:2020.1-x64 Maven:3
- 项目搭建   打开Idea  点击新建项目
-  设置参数 注意勾选依赖
-  项目初始化  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如
- ├─com ├─applicaton └─applicaton.java #启动器 ├─test #可以扫描到 └─test.java #可以扫描到 └─...#可以扫描到 ├─... #可以扫描到 ├─demo # 无法扫描到   编写HelloWorld  在此之前，为了结构方便管理，我将启动器转移到了[com]下(以前在[com.demo])，需要注意的是，启动器变更位置需要调整配置，如果是在Idea里拖动文件则不会(Idea会查找所有引用到的地方统一修改点赞！:))，在外部跳转的话需要去[.idea]下的workspace.xml里寻找component name=&amp;quot;RunManager&amp;quot;&amp;gt;将里面的&amp;lt;option name=&amp;quot;SPRING_BOOT_MAIN_CLASS&amp;quot; value=&amp;quot;com.DemoApplication&amp;quot; /&amp;gt;中的value改为对应启动器的路径。
-[注意] : 启动器不可以直接放到[java]下！至少有一个父包。 然后使用注解的方式编写控制器(@RestController是@Controller与@ResponseBody的集合)。   运行  需要先行配置一下数据库，如果没有的话请添加@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})，然后引入相关包即可。 恭喜！:)
-   代码  请点击传送门前往Github项目&amp;mdash;&amp;gt;
- 结语  感谢阅读我的博客，希望能给你带来帮助。:) @jASSSSSSON</description>
+Idea:2020.1-x64
+Maven:3
+Vue:2.6.11
+ 项目搭建   打开Idea,新建Springboot项目，项目名为VueDemo   下载最新稳定版的Vue.js   新建.html文件，使用Vue.js语法操作数据  将下载好的Vue.js放到[resource]目录下的[static]里，在[templates]文件夹下创建vueIndex.html文件，然后在&amp;lt;script src=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;中将文件加载进来。
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;#34;js/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; window.onload = function(){ // vue.js的代码开始于一个Vue对象。所以每次操作数据都要声明Vue对象开始。  var vm = new Vue({ el:&amp;#39;#app&amp;#39;, // 设置当前vue对象要控制的标签范围。  data:{ // data是将要展示到HTML标签元素中的数据。  message: &amp;#39;hello world!&amp;#39;, htmlText: &amp;#39;&amp;lt;a href=&amp;#34;www.baidu.com&amp;#34;&amp;gt;baidu&amp;lt;/a&amp;gt;&amp;#39;, } }); } &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>藏句阁</title>
+      <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</link>
+      <pubDate>Tue, 11 Aug 2020 13:25:05 -0400</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</guid>
+      <description>三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。 —— 颜真卿
+ 发现者，尤其是一个初出茅庐的年轻发现者，需要勇气才能无视他人的冷漠和怀疑，才能坚信自己发现的意义，并把研究继续下去。 —— 贝弗里奇
+ 沉浸于现实的忙碌之中，没有时间和精力思念过去，成功也就不会太远了。 —— 雷音
+ 学习知识要善于思考，思考，再思。我就是靠这个方法成为科学家的。 —— 爱因斯坦
+  </description>
     </item>
     
     <item>
       <title>三字经</title>
       <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</link>
-      <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
+      <pubDate>Tue, 11 Aug 2020 11:25:05 -0400</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/threecharacterclassic/</guid>
       <description>人之初，性本善。性相近，习相远。 苟不教，性乃迁。教之道，贵以专。
@@ -166,9 +131,63 @@ Idea:2020.1-x64 Maven:3
     </item>
     
     <item>
+      <title>搭建GithubPage博客(Hugo)</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</link>
+      <pubDate>Tue, 11 Aug 2020 18:07:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/blogbuilding/</guid>
+      <description>背景信息  使用Hugo初始化静态页面，Diary主题模板，这款主题带有Gitalk功能模块，统一在cofig.toml内配置参数即可，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+博客搭建
+细节
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Git: 2.28.0 x64
+静态博客生成工具：Hugo-0.74.3
+主题：Diary-1.2.0
+ 博客搭建   注册  首先，既然是利用GithubPage，所以需要一个Github账户，如果没有，请先注册一个，点击下方传送门可以直接跳转，已经注册过就可以跳过这步了。
+需要注意的是，第一次打开页面，这就是注册，按要求输入信息即可，Username不可重复，后续是URL中的标识，重名了就改一个吧！:)
+Github.com   下载  账号准备就绪了后，就需要下载Git客户端以及Hugo了，附上传送门。
+注意 : 选择自己的版本和对应x86/x64版本(x86是32位/bit，x64是64位/bit)，不要下载其他操作系统的文件！
+Git Git(win)
+Hugo(版本很多，windows的在下方)   安装配置  Git
+全部都下载好后，进行安装与配置，这里转载一下其他博主的文章，大家看看，只需要配置Git能够使用即可。 转载：Git下载、安装与环境配置 Hugo  将下载的文件解压，得到hugo.exe文件，然后如上一篇博文一样，将文件放到自己想要的位置后，添加环境变量path为文件所在目录即可(如D://software)。
+验证Hugo是否安装成功：[hugo version] 接下来新建一个文件夹，用来装静态网页，使用[hugo new site 自定义站点名称]，需要在文件夹内使用CMD命令，可以在文件夹地址栏输入[cmd]打开CMD再使用新建命令。 新建完成后，应该会产生如下图所示结构 ├─archetypes├─content├─data├─layouts├─static├─themes└─config.toml这个时候就需要挑选一款自己喜欢的主题了，传送门 ： Hugo主题
+挑选主题多注意主题作者的文档，里面记录了如何配置主题参数。
+ 将主题下载到本地后，移动到站点下的themes文件夹，并将里面的config.toml移动出来覆盖外面的配置文件，接下来，在站点文件夹下使用CMD命令hugo server开启本地测试，调试参数，直到满意，访问地址为http://localhost:1313(注意主题文档，有一部分需要配置config.toml文件才能正常使用) 如果测试无误，进入下一个环节。      部署准备  进入Github主页，新建一个仓库，仓库名为：[你的用户名].</description>
+    </item>
+    
+    <item>
+      <title>搭建博客中遇到的问题(Gitalk）</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</link>
+      <pubDate>Tue, 11 Aug 2020 14:15:30 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/githubblog/</guid>
+      <description>问题描述  在使用Hugo初始化静态页面时，使用了Diary主题，这款主题带有Gitalk功能模块，需要在cofig.toml内配置参数即可，一开始一切顺利，直到配置评论（Gitalk）时，出现了问题，一开始是网络连接错误[Error: Network Error] (问题解决方案可点击跳到相应部分)，后来又出现 [Error: Not Found] 是本次问题关注点，如需跳转，请点击下方快速跳转
+问题描述
+环境介绍
+博客搭建
+解决方案
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Git: 2.28.0 x64
+静态博客生成工具：Hugo-0.74.3
+ 博客搭建  详见我的另一篇文章搭建GithubPage博客(Hugo)
+ 解决方案   Error: Network Error  首先，提示词已经非常清晰了，所以请检查配置文件config,toml内的[baseURL]设置是否与博客主页地址相同(URL大小写不敏感，但还是推荐统一使用小写)，另外，在我的测试过程中，Chrome与Edge(非Chrome内核版)加载Gitalk组件出现两种情况，Edge一切正常，Chrome提示[Error: Network Error],所以建议出现此问题时，尝试切换不同内核浏览器浏览，并使用CTRL+F5强制刷新，避免缓存影响测试。
+注意 : 如果是用GitPage的博客地址，[https://XXX.github.io]后什么都不要加，还有属性要用&amp;quot;&amp;quot;包裹，我改的时候有一次就把前面的&amp;quot;给删掉了。:(
+  Error: Not Found  这个提示词的意思是存放Gitalk评论内容的仓库配置有误，这个就需要到自己配置仓库的地方改了，我使用的是主题集成的方式，所以只需要到主题的配置文件config.toml内配置即可，如果是自己添加的Gitalk组件需要到你自己的配置文件处修改，内容为repo=&amp;quot;[你的仓库名称]&amp;rdquo;(如repo=&amp;quot;Gitalk&amp;quot;就行，不用加地址)
+我在配置这个的时候，看过网上其他博客分享的文章，结合主题文档，自己配置了一下，一开始出现了[Error: Network Error]，但很快就解决了，接下来这个[Error: Not Found]可是把我折腾的够呛，主要是他们很多的实例中都会打马赛克，而文字说明又比较模糊，比如：[repo]=&amp;quot;填写自己的仓库&amp;quot;，我每次都是填写了仓库的全地址。(因为Gitalk是将评论记录到issue中，所以我一开始使用的就是博客的仓库)
+但一直不行，错误提示也一直没变，后来我又看了几篇帖子说是直接使用博客地址的，我又使用了本博客的地址https://jasssssson.github.io。一开始加上了[.git]尾缀，测试不行(那个时候，我还不知道浏览器差别，所以一会是[Error: Network Error]，后面改好后测试有些时候切换了浏览器，一会又是[Error: Not Found]，搞得我不知道到底是baseURL还是repo的问题了)，后来又看到了去掉[.git]的文章，又测试了好久，也毫无进展，直到我看到一篇很老的文章，他没有打码，感觉恍然大悟，立马修改，测试通过。:)
+   代码  config.toml baseURL = &amp;#34;https://xxx.github.io&amp;#34; DefaultContentLanguage = &amp;#34;zh&amp;#34; # Theme&amp;#39;s display language, supports: en, fr, zh, zh-hant languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;xxx&amp;#39;s Blog&amp;#34; copyright = &amp;#34;xxx&amp;#34; theme = &amp;#34;diary&amp;#34; [markup] [markup.</description>
+    </item>
+    
+    <item>
       <title>奇怪的问题</title>
       <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
-      <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
+      <pubDate>Mon, 10 Aug 2020 11:25:05 -0400</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
       <description>开始  1.假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？ [忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]
@@ -180,16 +199,27 @@ Idea:2020.1-x64 Maven:3
     </item>
     
     <item>
-      <title>藏句阁</title>
-      <link>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</link>
-      <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
+      <title>简单配置Springboot（Idea）</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</link>
+      <pubDate>Mon, 10 Aug 2020 13:51:30 +0800</pubDate>
       
-      <guid>https://jasssssson.github.io/posts/%E4%B8%AD%E6%96%87/string/</guid>
-      <description>三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。 —— 颜真卿
- 发现者，尤其是一个初出茅庐的年轻发现者，需要勇气才能无视他人的冷漠和怀疑，才能坚信自己发现的意义，并把研究继续下去。 —— 贝弗里奇
- 沉浸于现实的忙碌之中，没有时间和精力思念过去，成功也就不会太远了。 —— 雷音
- 学习知识要善于思考，思考，再思。我就是靠这个方法成为科学家的。 —— 爱因斯坦
-  </description>
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/springboot/</guid>
+      <description>背景信息 使用Idea搭建项目，Spring Initializr生成项目结构，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+项目搭建
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Idea:2020.1-x64
+Maven:3
+ 项目搭建   打开Idea  点击新建项目
+  设置参数 注意勾选依赖
+  项目初始化  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如
+ ├─com ├─applicaton └─applicaton.java #启动器 ├─test #可以扫描到 └─test.java #可以扫描到 └─...#可以扫描到 ├─... #可以扫描到 ├─demo # 无法扫描到   编写HelloWorld  在此之前，为了结构方便管理，我将启动器转移到了[com]下(以前在[com.demo])，需要注意的是，启动器变更位置需要调整配置，如果是在Idea里拖动文件则不会(Idea会查找所有引用到的地方统一修改点赞！:))，在外部跳转的话需要去[.idea]下的workspace.xml里寻找component name=&amp;quot;RunManager&amp;quot;&amp;gt;将里面的&amp;lt;option name=&amp;quot;SPRING_BOOT_MAIN_CLASS&amp;quot; value=&amp;quot;com.DemoApplication&amp;quot; /&amp;gt;中的value改为对应启动器的路径。
+[注意] : 启动器不可以直接放到[java]下！至少有一个父包。 然后使用注解的方式编写控制器(@RestController是@Controller与@ResponseBody的集合)。   运行  需要先行配置一下数据库，如果没有的话请添加@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})，然后引入相关包即可。 恭喜！:)
+   代码  请点击传送门前往Github项目&amp;mdash;&amp;gt;
+ 结语  感谢阅读我的博客，希望能给你带来帮助。:) @jASSSSSSON</description>
     </item>
     
     <item>

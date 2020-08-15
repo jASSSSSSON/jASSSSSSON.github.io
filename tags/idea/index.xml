@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Mon, 10 Aug 2020 13:51:30 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 17:46:30 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/tags/idea/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>简单配置Vue.js（Idea）</title>
+      <link>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/vuebuilding/</link>
+      <pubDate>Sat, 15 Aug 2020 17:46:30 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E9%85%8D%E7%BD%AE/vuebuilding/</guid>
+      <description>背景信息  使用Idea搭建项目，Spring Initializr生成项目结构，前端使用Vue.js框架，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+项目搭建
+代码
+结语
+ 环境介绍 操作系统：Windows10
+Idea:2020.1-x64
+Maven:3
+Vue:2.6.11
+ 项目搭建   打开Idea,新建Springboot项目，项目名为VueDemo   下载最新稳定版的Vue.js   新建.html文件，使用Vue.js语法操作数据  将下载好的Vue.js放到[resource]目录下的[static]里，在[templates]文件夹下创建vueIndex.html文件，然后在&amp;lt;script src=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;中将文件加载进来。
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;#34;js/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; window.onload = function(){ // vue.js的代码开始于一个Vue对象。所以每次操作数据都要声明Vue对象开始。  var vm = new Vue({ el:&amp;#39;#app&amp;#39;, // 设置当前vue对象要控制的标签范围。  data:{ // data是将要展示到HTML标签元素中的数据。  message: &amp;#39;hello world!&amp;#39;, htmlText: &amp;#39;&amp;lt;a href=&amp;#34;www.baidu.com&amp;#34;&amp;gt;baidu&amp;lt;/a&amp;gt;&amp;#39;, } }); } &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;!</description>
+    </item>
     
     <item>
       <title>简单配置Springboot（Idea）</title>
@@ -25,7 +45,8 @@
 代码
 结语
  环境介绍 操作系统：Windows10
-Idea:2020.1-x64 Maven:3
+Idea:2020.1-x64
+Maven:3
  项目搭建   打开Idea  点击新建项目
   设置参数 注意勾选依赖
   项目初始化  需要注意的是，Springboot扫描的方式是以启动器所在的目录开始，想下扫描，也就是说如果包建在启动器所在包上层，则无法加载到。比如
