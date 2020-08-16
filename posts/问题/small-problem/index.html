@@ -17,7 +17,9 @@
 
 
 <meta property="og:title" content=":(" />
-<meta property="og:description" content="1.解析.jsp需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;javax.servlet&lt;/groupId&gt; &lt;artifactId&gt;jstl&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt; &lt;artifactId&gt;tomcat-embed-jasper&lt;/artifactId&gt; &lt;scope&gt;provided&lt;/scope&gt; &lt;/dependency&gt;  2.解析.html需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt; &lt;/dependency&gt;  &hellip; " />
+<meta property="og:description" content="1.解析.jsp需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;javax.servlet&lt;/groupId&gt; &lt;artifactId&gt;jstl&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt; &lt;artifactId&gt;tomcat-embed-jasper&lt;/artifactId&gt; &lt;scope&gt;provided&lt;/scope&gt; &lt;/dependency&gt;  2.解析.html需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt; &lt;/dependency&gt;  3.使用SpringCloud中的Eureka注册服务时 spring boot 2.x 需要这个依赖
+&lt;dependency&gt; &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt; &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt; &lt;/dependency&gt; spring boot 1.x 需要这个依赖
+&lt;dependency&gt; &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt; &lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt; &lt;/dependency&gt;  &hellip; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/" />
 <meta property="article:published_time" content="2020-07-03T18:37:05+08:00" />
@@ -29,7 +31,9 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=":("/>
-<meta name="twitter:description" content="1.解析.jsp需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;javax.servlet&lt;/groupId&gt; &lt;artifactId&gt;jstl&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt; &lt;artifactId&gt;tomcat-embed-jasper&lt;/artifactId&gt; &lt;scope&gt;provided&lt;/scope&gt; &lt;/dependency&gt;  2.解析.html需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt; &lt;/dependency&gt;  &hellip; "/>
+<meta name="twitter:description" content="1.解析.jsp需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;javax.servlet&lt;/groupId&gt; &lt;artifactId&gt;jstl&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt; &lt;artifactId&gt;tomcat-embed-jasper&lt;/artifactId&gt; &lt;scope&gt;provided&lt;/scope&gt; &lt;/dependency&gt;  2.解析.html需要在maven中添加依赖 &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt; &lt;/dependency&gt;  3.使用SpringCloud中的Eureka注册服务时 spring boot 2.x 需要这个依赖
+&lt;dependency&gt; &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt; &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt; &lt;/dependency&gt; spring boot 1.x 需要这个依赖
+&lt;dependency&gt; &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt; &lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt; &lt;/dependency&gt;  &hellip; "/>
 
 
 
@@ -241,6 +245,24 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
+								<a href="#3%e4%bd%bf%e7%94%a8springcloud%e4%b8%ad%e7%9a%84eureka%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e6%97%b6" onclick="onNavClick(`#3使用springcloud中的eureka注册服务时-nav`)" id="3使用springcloud中的eureka注册服务时-nav">
+									3.使用SpringCloud中的Eureka注册服务时
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
 								<a href="#heading" onclick="onNavClick(`#heading-nav`)" id="heading-nav">
 									…
 								</a>
@@ -385,6 +407,24 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 							<li>
+								<a href="#3%e4%bd%bf%e7%94%a8springcloud%e4%b8%ad%e7%9a%84eureka%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e6%97%b6" onclick="onNavClick(`#3使用springcloud中的eureka注册服务时-nav`)" id="3使用springcloud中的eureka注册服务时-nav">
+									3.使用SpringCloud中的Eureka注册服务时
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
 								<a href="#heading" onclick="onNavClick(`#heading-nav`)" id="heading-nav">
 									…
 								</a>
@@ -490,7 +530,7 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                             
 
                             
-                            15 s.
+                            30 s.
                         
                     </div>
                 </div>
@@ -515,6 +555,18 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;dependency&gt;</span>
         <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
         <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-thymeleaf<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;/dependency&gt;</span>
+</code></pre></div><hr>
+<h2 id="3使用springcloud中的eureka注册服务时"><code>3.</code>使用<code>SpringCloud</code>中的<code>Eureka</code>注册服务时</h2>
+<p>spring boot 2.x 需要这个依赖</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;dependency&gt;</span>
+        <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.cloud<span style="color:#f92672">&lt;/groupId&gt;</span>
+        <span style="color:#f92672">&lt;artifactId&gt;</span>spring-cloud-starter-netflix-eureka-server<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;/dependency&gt;</span>
+</code></pre></div><p>spring boot 1.x 需要这个依赖</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;dependency&gt;</span>
+        <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.cloud<span style="color:#f92672">&lt;/groupId&gt;</span>
+        <span style="color:#f92672">&lt;artifactId&gt;</span>spring-cloud-starter-eureka<span style="color:#f92672">&lt;/artifactId&gt;</span>
     <span style="color:#f92672">&lt;/dependency&gt;</span>
 </code></pre></div><hr>
 <h2 id="heading">&hellip;</h2>
