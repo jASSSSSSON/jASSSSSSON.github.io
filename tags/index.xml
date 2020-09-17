@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 17:46:30 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 13:18:00 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mySql</title>
+      <link>https://jasssssson.github.io/tags/mysql/</link>
+      <pubDate>Thu, 17 Sep 2020 13:18:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tip</title>
+      <link>https://jasssssson.github.io/tags/tip/</link>
+      <pubDate>Thu, 17 Sep 2020 13:18:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/tags/tip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>helloWorld</title>
+      <link>https://jasssssson.github.io/tags/helloworld/</link>
+      <pubDate>Wed, 16 Sep 2020 17:38:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/tags/helloworld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://jasssssson.github.io/tags/python/</link>
+      <pubDate>Wed, 16 Sep 2020 17:38:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>idea</title>

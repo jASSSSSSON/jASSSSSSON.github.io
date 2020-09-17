@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>helloWorld on jASSSSSSON&#39;s Blog</title>
+    <link>https://jasssssson.github.io/tags/helloworld/</link>
+    <description>Recent content in helloWorld on jASSSSSSON&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>jASSSSSSON</copyright>
+    <lastBuildDate>Wed, 16 Sep 2020 17:38:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://jasssssson.github.io/tags/helloworld/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>初步开始Python</title>
+      <link>https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/</link>
+      <pubDate>Wed, 16 Sep 2020 17:38:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/</guid>
+      <description>背景信息  正式开始学习Python，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+语言背景
+HelloWorld
+结语
+ 环境介绍 操作系统：Windows10
+Git: 2.28.0 x64
+Python:3.8.5
+ 语言背景  Python是一种跨平台的计算机程序设计语言。 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越多被用于独立的、大型项目的开发。
+百度百科
+官网
+ HelloWorld  使用PyCharm打开第一个[.py]文件
+#!/usr/bin/python # -*- coding: UTF-8 -*- 这是中文标识 print(&amp;#34;你好，世界&amp;#34;) print(&amp;#39;HelloWorld&amp;#39;)  结语  感谢阅读我的博客，希望能给你带来帮助。:) @jASSSSSSON</description>
+    </item>
+    
+  </channel>
+</rss>

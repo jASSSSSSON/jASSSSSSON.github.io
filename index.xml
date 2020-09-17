@@ -6,9 +6,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 17:46:30 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 13:18:00 +0800</lastBuildDate>
     
         <atom:link href="https://jasssssson.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>MySql数据库</title>
+        <link>https://jasssssson.github.io/posts/tips/mysqltips/</link>
+        <pubDate>Thu, 17 Sep 2020 13:18:00 +0800</pubDate>
+        
+        <guid>https://jasssssson.github.io/posts/tips/mysqltips/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/tips/mysqltips/ -&lt;h1 id=&#34;开始&#34;&gt;开始&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-字段长度条件搜索&#34;&gt;&lt;code&gt;1.&lt;/code&gt; 字段长度条件搜索&lt;/h2&gt;
+&lt;h3 id=&#34;lengthchar_length的区别&#34;&gt;length()、char_length()的区别。&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;length()：mysql里面的length()函数是一个用来获取字符串长度的内置函数。&lt;/li&gt;
+&lt;li&gt;char_length()：在mysql内置函数里面查看字符串长度的还有一个函数是char_length()。&lt;/li&gt;
+&lt;li&gt;这两个函数的区别是：
+&lt;ul&gt;
+&lt;li&gt;length()： 单位是字节，utf8编码下,一个汉字三个字节，一个数字或字母一个字节。gbk编码下,一个汉字两个字节，一个数字或字母一个字节。&lt;/li&gt;
+&lt;li&gt;char_length()：单位为字符，不管汉字还是数字或者是字母都算是一个字符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; 
+      &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt;
+      baili_user
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; 
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;char_length&lt;/span&gt;(name)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;如果搜索的字符为中文，推荐使用&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;char_length&lt;/span&gt;()
+      &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;非中文使用&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;length&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;结束&#34;&gt;结束&lt;/h1&gt;
+- https://jasssssson.github.io/posts/tips/mysqltips/ - jASSSSSSON</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>初步开始Python</title>
+        <link>https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/</link>
+        <pubDate>Wed, 16 Sep 2020 17:38:00 +0800</pubDate>
+        
+        <guid>https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/</guid>
+        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/ -&lt;h2 id=&#34;背景信息&#34;&gt;背景信息&lt;/h2&gt;
+&lt;p&gt;  正式开始学习&lt;code&gt;Python&lt;/code&gt;，下面是快速跳转入口，如有需要，请点击进行快速跳转&lt;br&gt;
+&lt;a href=&#34;#%E8%83%8C%E6%99%AF%E4%BF%A1%E6%81%AF&#34;&gt;背景信息&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D&#34;&gt;环境介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E8%AF%AD%E8%A8%80%E8%83%8C%E6%99%AF&#34;&gt;语言背景&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#HelloWorld&#34;&gt;HelloWorld&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#%E7%BB%93%E8%AF%AD&#34;&gt;结语&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;环境介绍&#34;&gt;环境介绍&lt;/h2&gt;
+&lt;p&gt;操作系统：Windows10&lt;br&gt;
+Git: 2.28.0 x64&lt;br&gt;
+Python:3.8.5&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;语言背景&#34;&gt;语言背景&lt;/h2&gt;
+&lt;p&gt;  Python是一种跨平台的计算机程序设计语言。 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越多被用于独立的、大型项目的开发。&lt;br&gt;
+&lt;a href=&#34;https://baike.baidu.com/item/Python/407313?fr=aladdin&#34;&gt;百度百科&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.python.org/&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;helloworld&#34;&gt;HelloWorld&lt;/h2&gt;
+&lt;p&gt;  使用&lt;code&gt;PyCharm&lt;/code&gt;打开第一个&lt;code&gt;[.py]&lt;/code&gt;文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# -*- coding: UTF-8 -*- 这是中文标识&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;你好，世界&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;HelloWorld&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.962v.com/images/2020/09/17/pythonHelloWorld.png&#34; alt=&#34;HelloWorld&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;  感谢阅读我的博客，希望能给你带来帮助。&lt;code&gt;:)&lt;/code&gt; &lt;a href=&#34;https://github.com/jASSSSSSON&#34;&gt;@jASSSSSSON&lt;/a&gt;&lt;/p&gt;
+- https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/ - jASSSSSSON</description>
+        </item>
     
     
     
@@ -689,7 +764,7 @@ Maven:3&lt;/p&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-boot-starter-thymeleaf&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
     &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;3使用springcloud中的eureka注册服务时&#34;&gt;&lt;code&gt;3.&lt;/code&gt;使用&lt;code&gt;SpringCloud&lt;/code&gt;中的&lt;code&gt;Eureka&lt;/code&gt;注册服务时&lt;/h2&gt;
+&lt;h2 id=&#34;3使用springcloud中的eureka服务时&#34;&gt;&lt;code&gt;3.&lt;/code&gt;使用&lt;code&gt;SpringCloud&lt;/code&gt;中的&lt;code&gt;Eureka&lt;/code&gt;服务时&lt;/h2&gt;
 &lt;p&gt;spring boot 2.x 需要这个依赖&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.cloud&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
@@ -699,6 +774,18 @@ Maven:3&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.cloud&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-cloud-starter-eureka&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;3使用springcloud中的fegin注册服务时&#34;&gt;&lt;code&gt;3.&lt;/code&gt;使用&lt;code&gt;SpringCloud&lt;/code&gt;中的&lt;code&gt;Fegin&lt;/code&gt;注册服务时&lt;/h2&gt;
+&lt;p&gt;spring boot 2.x 需要这个依赖&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;     &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.cloud&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-cloud-starter-openfeign&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;spring boot 1.x 需要这个依赖&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.cloud&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-cloud-starter-feign&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
     &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;heading&#34;&gt;&amp;hellip;&lt;/h2&gt;
@@ -783,114 +870,6 @@ that Naso died in exile among the Muscovites. But may the devil flay me if
 I understand what they mean with their Esmeralda! What is that word, in
 the first place?—‘tis Egyptian!”&lt;/p&gt;
 - https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-6/ - jASSSSSSON</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>Chapter I: The Grand Hall</title>
-        <link>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/</link>
-        <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
-        
-        <guid>https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
-to-day, the Parisians awoke to the sound of all the bells in the triple
-circuit of the city, the university, and the town ringing a full peal.&lt;/p&gt;
-&lt;p&gt;The sixth of January, 1482, is not, however, a day of which history has
-preserved the memory. There was nothing notable in the event which thus
-set the bells and the bourgeois of Paris in a ferment from early morning.
-It was neither an assault by the Picards nor the Burgundians, nor a hunt
-led along in procession, nor a revolt of scholars in the town of Laas, nor
-an entry of “our much dread lord, monsieur the king,” nor even a pretty
-hanging of male and female thieves by the courts of Paris. Neither was it
-the arrival, so frequent in the fifteenth century, of some plumed and
-bedizened embassy. It was barely two days since the last cavalcade of that
-nature, that of the Flemish ambassadors charged with concluding the
-marriage between the dauphin and Marguerite of Flanders, had made its
-entry into Paris, to the great annoyance of M. le Cardinal de Bourbon,
-who, for the sake of pleasing the king, had been obliged to assume an
-amiable mien towards this whole rustic rabble of Flemish burgomasters, and
-to regale them at his Hôtel de Bourbon, with a very “pretty morality,
-allegorical satire, and farce,” while a driving rain drenched the
-magnificent tapestries at his door.&lt;/p&gt;
-&lt;p&gt;What put the “whole population of Paris in commotion,” as Jehan de Troyes
-expresses it, on the sixth of January, was the double solemnity, united
-from time immemorial, of the Epiphany and the Feast of Fools.&lt;/p&gt;
-&lt;p&gt;On that day, there was to be a bonfire on the Place de Grève, a maypole at
-the Chapelle de Braque, and a mystery at the Palais de Justice. It had
-been cried, to the sound of the trumpet, the preceding evening at all the
-cross roads, by the provost’s men, clad in handsome, short, sleeveless
-coats of violet camelot, with large white crosses upon their breasts.&lt;/p&gt;
-&lt;p&gt;So the crowd of citizens, male and female, having closed their houses and
-shops, thronged from every direction, at early morn, towards some one of
-the three spots designated.&lt;/p&gt;
-&lt;p&gt;Each had made his choice; one, the bonfire; another, the maypole; another,
-the mystery play. It must be stated, in honor of the good sense of the
-loungers of Paris, that the greater part of this crowd directed their
-steps towards the bonfire, which was quite in season, or towards the
-mystery play, which was to be presented in the grand hall of the Palais de
-Justice (the courts of law), which was well roofed and walled; and that
-the curious left the poor, scantily flowered maypole to shiver all alone
-beneath the sky of January, in the cemetery of the Chapel of Braque.&lt;/p&gt;
-&lt;p&gt;The populace thronged the avenues of the law courts in particular, because
-they knew that the Flemish ambassadors, who had arrived two days
-previously, intended to be present at the representation of the mystery,
-and at the election of the Pope of the Fools, which was also to take place
-in the grand hall.&lt;/p&gt;
-&lt;p&gt;It was no easy matter on that day, to force one’s way into that grand
-hall, although it was then reputed to be the largest covered enclosure in
-the world (it is true that Sauval had not yet measured the grand hall of
-the Château of Montargis). The palace place, encumbered with people,
-offered to the curious gazers at the windows the aspect of a sea; into
-which five or six streets, like so many mouths of rivers, discharged every
-moment fresh floods of heads. The waves of this crowd, augmented
-incessantly, dashed against the angles of the houses which projected here
-and there, like so many promontories, into the irregular basin of the
-place. In the centre of the lofty Gothic* façade of the palace, the grand
-staircase, incessantly ascended and descended by a double current, which,
-after parting on the intermediate landing-place, flowed in broad waves
-along its lateral slopes,—the grand staircase, I say, trickled
-incessantly into the place, like a cascade into a lake. The cries, the
-laughter, the trampling of those thousands of feet, produced a great noise
-and a great clamor. From time to time, this noise and clamor redoubled;
-the current which drove the crowd towards the grand staircase flowed
-backwards, became troubled, formed whirlpools. This was produced by the
-buffet of an archer, or the horse of one of the provost’s sergeants, which
-kicked to restore order; an admirable tradition which the provostship has
-bequeathed to the constablery, the constablery to the _maréchaussée_,
-the _maréchaussée_ to our _gendarmeri_ of Paris.&lt;/p&gt;
-- https://jasssssson.github.io/posts/%E6%95%85%E4%BA%8B/chapter-1/ - jASSSSSSON</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>奇怪的问题</title>
-        <link>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</link>
-        <pubDate>Mon, 24 Aug 1998 11:25:05 -0400</pubDate>
-        
-        <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/</guid>
-        <description>jASSSSSSON&#39;s Blog https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ -&lt;h1 id=&#34;开始&#34;&gt;开始&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1假如你穿越回到了过去抛开电影里的设定你确实遇到了自己那么怎样才能鉴别谁是过去的自己谁是现在的自己呢&#34;&gt;&lt;code&gt;1.&lt;/code&gt;假如你穿越回到了过去，抛开电影里的设定，你确实遇到了自己，那么怎样才能鉴别谁是过去的自己，谁是现在的自己呢？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[忽略年龄，比如考虑一分钟以后的自己，不能提前做出任何操作，比如使用什么标记或以极短时间内快速运转的设备记录信息]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2假如造出了预知未来的机器人们靠着这台机器可以避免所有灾害那么一旦采取措施未来就会立刻改变如果出现两台机器他们的预测结果会不会出现差异&#34;&gt;&lt;code&gt;2.&lt;/code&gt;假如造出了预知未来的机器，人们靠着这台机器可以避免所有灾害。那么，一旦采取措施，未来就会立刻改变。如果出现两台机器，他们的预测结果会不会出现差异？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[比如，假定未来是以图像形式展示的，我使用其中一台设备观察一段时间后的另一台，然后做出改变未来的动作]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;3如果祖父悖论不存在是否可以证明时间也不存在&#34;&gt;&lt;code&gt;3.&lt;/code&gt;如果祖父悖论不存在，是否可以证明时间也不存在？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[如果杀死祖父的那一刻，&#39;我&#39;会直接消失]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;4如果进行了时间穿越旅行那会不会只是推动了全体时间&#34;&gt;&lt;code&gt;4.&lt;/code&gt;如果进行了时间穿越旅行，那会不会只是推动了全体时间&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[比如你会因为向前旅行三年而减少三岁]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;5假设宇宙是有边界的那它的边缘到底会是什么性质呢&#34;&gt;&lt;code&gt;5.&lt;/code&gt;假设宇宙是有边界的，那它的边缘到底会是什么性质呢？&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;[会不会从这里出去，从中心对称的另一边出来]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&amp;hellip;&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;结尾&#34;&gt;结尾&lt;/h1&gt;
-- https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/weird-questions/ - jASSSSSSON</description>
         </item>
     
     

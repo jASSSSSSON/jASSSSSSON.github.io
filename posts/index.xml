@@ -7,10 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>jASSSSSSON</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 17:46:30 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 13:18:00 +0800</lastBuildDate>
     
 	<atom:link href="https://jasssssson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MySql数据库</title>
+      <link>https://jasssssson.github.io/posts/tips/mysqltips/</link>
+      <pubDate>Thu, 17 Sep 2020 13:18:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/tips/mysqltips/</guid>
+      <description>开始  1. 字段长度条件搜索 length()、char_length()的区别。  length()：mysql里面的length()函数是一个用来获取字符串长度的内置函数。 char_length()：在mysql内置函数里面查看字符串长度的还有一个函数是char_length()。 这两个函数的区别是：  length()： 单位是字节，utf8编码下,一个汉字三个字节，一个数字或字母一个字节。gbk编码下,一个汉字两个字节，一个数字或字母一个字节。 char_length()：单位为字符，不管汉字还是数字或者是字母都算是一个字符。    SELECT * FROM baili_user WHERE char_length(name)&amp;gt;3 #如果搜索的字符为中文，推荐使用char_length() #非中文使用length()  结束 </description>
+    </item>
+    
+    <item>
+      <title>初步开始Python</title>
+      <link>https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/</link>
+      <pubDate>Wed, 16 Sep 2020 17:38:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/%E8%AF%AD%E8%A8%80/python1/</guid>
+      <description>背景信息  正式开始学习Python，下面是快速跳转入口，如有需要，请点击进行快速跳转
+背景信息
+环境介绍
+语言背景
+HelloWorld
+结语
+ 环境介绍 操作系统：Windows10
+Git: 2.28.0 x64
+Python:3.8.5
+ 语言背景  Python是一种跨平台的计算机程序设计语言。 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越多被用于独立的、大型项目的开发。
+百度百科
+官网
+ HelloWorld  使用PyCharm打开第一个[.py]文件
+#!/usr/bin/python # -*- coding: UTF-8 -*- 这是中文标识 print(&amp;#34;你好，世界&amp;#34;) print(&amp;#39;HelloWorld&amp;#39;)  结语  感谢阅读我的博客，希望能给你带来帮助。:) @jASSSSSSON</description>
+    </item>
     
     <item>
       <title>简单配置Vue.js（Idea）</title>
@@ -205,9 +236,11 @@ Maven:3
       <pubDate>Fri, 03 Jul 2020 18:37:05 +0800</pubDate>
       
       <guid>https://jasssssson.github.io/posts/%E9%97%AE%E9%A2%98/small-problem/</guid>
-      <description>1.解析.jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析.html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  3.使用SpringCloud中的Eureka注册服务时 spring boot 2.x 需要这个依赖
+      <description>1.解析.jsp需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.servlet&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;jstl&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt;  2.解析.html需要在maven中添加依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  3.使用SpringCloud中的Eureka服务时 spring boot 2.x 需要这个依赖
 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-starter-netflix-eureka-server&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; spring boot 1.x 需要这个依赖
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-starter-eureka&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-starter-eureka&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  3.使用SpringCloud中的Fegin注册服务时 spring boot 2.x 需要这个依赖
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-starter-openfeign&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; spring boot 1.x 需要这个依赖
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-starter-feign&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt;  &amp;hellip; </description>
     </item>
     
     <item>

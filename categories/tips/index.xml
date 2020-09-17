@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on jASSSSSSON&#39;s Blog</title>
+    <link>https://jasssssson.github.io/categories/tips/</link>
+    <description>Recent content in Tips on jASSSSSSON&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>jASSSSSSON</copyright>
+    <lastBuildDate>Thu, 17 Sep 2020 13:18:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://jasssssson.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySql数据库</title>
+      <link>https://jasssssson.github.io/posts/tips/mysqltips/</link>
+      <pubDate>Thu, 17 Sep 2020 13:18:00 +0800</pubDate>
+      
+      <guid>https://jasssssson.github.io/posts/tips/mysqltips/</guid>
+      <description>开始  1. 字段长度条件搜索 length()、char_length()的区别。  length()：mysql里面的length()函数是一个用来获取字符串长度的内置函数。 char_length()：在mysql内置函数里面查看字符串长度的还有一个函数是char_length()。 这两个函数的区别是：  length()： 单位是字节，utf8编码下,一个汉字三个字节，一个数字或字母一个字节。gbk编码下,一个汉字两个字节，一个数字或字母一个字节。 char_length()：单位为字符，不管汉字还是数字或者是字母都算是一个字符。    SELECT * FROM baili_user WHERE char_length(name)&amp;gt;3 #如果搜索的字符为中文，推荐使用char_length() #非中文使用length()  结束 </description>
+    </item>
+    
+  </channel>
+</rss>
